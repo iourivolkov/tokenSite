@@ -1,5 +1,5 @@
 const TokenomicsPage = () => {
-  return <>Tokenomics Page</>;
+  return <></>;
 };
 
 export default TokenomicsPage;

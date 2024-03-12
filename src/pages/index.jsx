@@ -4,14 +4,16 @@ import FooterPage from "@/containers/FooterPage";
 import RoadmapPage from "@/containers/RoadmapPage";
 import TokenomicsPage from "@/containers/TokenomicsPage";
 
-export default function Home() {
+const Home = () => {
   return (
     <>
-      <LandingPage />
+      {/* <LandingPage /> */}
       <HeroPage />
       <RoadmapPage />
       <TokenomicsPage />
       <FooterPage />
     </>
   );
-}
+};
+
+export default Home;

@@ -1,5 +1,5 @@
 const FooterPage = () => {
-  return <>Footer Page</>;
+  return <></>;
 };
 
 export default FooterPage;

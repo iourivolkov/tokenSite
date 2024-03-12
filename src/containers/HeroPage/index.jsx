@@ -1,5 +1,11 @@
+import { StyledText, HeroPageContainer } from "./styled";
+
 const HeroPage = () => {
-  return <>Hero Page</>;
+  return (
+    <HeroPageContainer>
+      <StyledText>The lore of Lurry...</StyledText>
+    </HeroPageContainer>
+  );
 };
 
 export default HeroPage;

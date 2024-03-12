@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "gochi-hand";
+  src: url("/fonts/GochiHand-Regular.ttf") format("truetype");
+  font-display: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
