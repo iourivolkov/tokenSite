@@ -6,8 +6,6 @@ import {
   BuyButton,
   LurryImage,
 } from "./styled";
-import Image from "next/image";
-import { useState } from "react";
 import Link from "next/link";
 
 const LurrynomicsText = {
@@ -20,7 +18,6 @@ const LurrynomicsText = {
   button: "buy $lurry",
 };
 
-// @TODO - animate yetiLurry to peak out from right side
 // @TODO - add correct dex link once contract is live
 // @TODO - add diff font color to text?
 
