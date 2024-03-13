@@ -1,4 +1,14 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const slideAnimation = keyframes`
+  0% {
+    transform: translateX(100%) rotate(-90deg);
+  } 50% {
+    transform: translateX(0) rotate(-90deg);
+  } 100% {
+    transform: translateX(100%) rotate(-90deg);
+  }
+`;
 
 export const TokenomicsPageContainer = styled.div`
   display: flex;
@@ -56,6 +66,7 @@ export const BuyButton = styled.button`
 export const LurryImage = styled.img`
   position: absolute;
   height: 900px;
-  transform: rotate(-90deg);
   right: -400px;
+  transform: rotate(-90deg);
+  animation: ${slideAnimation} 15s linear infinite;
 `;
