@@ -9,7 +9,7 @@ const Home = () => {
     <>
       {/* <LandingPage /> */}
       <HeroPage />
-      <RoadmapPage />
+      {/* <RoadmapPage /> */}
       <TokenomicsPage />
       <FooterPage />
     </>
