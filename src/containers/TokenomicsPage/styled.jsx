@@ -5,7 +5,7 @@ export const TokenomicsPageContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: #edfffe;
 `;
@@ -38,12 +38,27 @@ export const BuyButton = styled.button`
   width: 240px;
   height: 80px;
   border-radius: 50px;
-  border: 2px solid #7abbbc;
-  background-color: inherit;
-  color: #7abbbc;
+  background-color: #7abbbc;
+  border: none;
+  color: #fff;
   font-family: "gochi-hand";
   font-size: 24px;
   text-transform: uppercase;
   margin-top: 75px;
   z-index: 10;
+
+  &:hover {
+    background-color: #589b9c;
+    transition: all ease-in 0.1s;
+  }
+`;
+
+export const LurryImage = styled.img`
+  position: absolute;
+  width: 970px;
+  height: 1000px;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+  right: -650px;
 `;

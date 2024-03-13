@@ -7,7 +7,7 @@ import TokenomicsPage from "@/containers/TokenomicsPage";
 const Home = () => {
   return (
     <>
-      {/* <LandingPage /> */}
+      <LandingPage />
       <HeroPage />
       {/* <RoadmapPage /> */}
       <TokenomicsPage />
