@@ -55,10 +55,7 @@ export const BuyButton = styled.button`
 
 export const LurryImage = styled.img`
   position: absolute;
-  width: 970px;
-  height: 1000px;
-  width: 100%;
-  height: 100%;
+  height: 900px;
   transform: rotate(-90deg);
-  right: -650px;
+  right: -400px;
 `;
