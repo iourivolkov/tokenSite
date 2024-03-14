@@ -5,6 +5,8 @@ import {
   SocialButton,
   SocialButtonContainer,
   FooterSea,
+  OgLurry,
+  FooterText2,
 } from "./styled";
 import Link from "next/link";
 
@@ -22,6 +24,7 @@ const FooterText = {
 const FooterPage = () => {
   return (
     <FooterPageContainer>
+      <OgLurry src="/assets/originalLurry.png" />
       <Heading>{FooterText.heading}</Heading>
       <Subheading>{FooterText.subheading}</Subheading>
       <SocialButtonContainer>
@@ -32,7 +35,9 @@ const FooterPage = () => {
           <SocialButton>{FooterText.tgButton}</SocialButton>
         </Link>
       </SocialButtonContainer>
-      <FooterSea></FooterSea>
+      <FooterSea>
+        <FooterText2>Powered by LurryLabs</FooterText2>
+      </FooterSea>
     </FooterPageContainer>
   );
 };

@@ -2,13 +2,21 @@ import styled, { keyframes } from "styled-components";
 
 const floatingAnimation = keyframes`
   0% {
-    transform: translateY(0);
+    transform: translateX(100vw) ;
   }
-  50% {
-    transform: translateY(-20px);
-  }
+  
   100% {
-    transform: translateY(0);
+    transform: translateX(-100vw) ;
+  }
+`;
+
+const floatingAnimation2 = keyframes`
+  0% {
+    transform: translateX(-1000%) ;
+  }
+  
+  100% {
+    transform: translateX(1000%) ;
   }
 `;
 
@@ -17,9 +25,9 @@ export const FooterPageContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Change height to min-height */
+  min-height: 100vh;
   background-color: #edfffe;
-  position: relative; /* Add relative positioning */
+  position: relative;
 `;
 
 export const Heading = styled.h1`
@@ -66,7 +74,7 @@ export const SocialButton = styled.button`
 `;
 
 export const FooterSea = styled.div`
-  background: linear-gradient(rgb(93, 139, 181), rgb(124, 189, 173));
+  background: linear-gradient(rgb(113, 64, 21), rgb(69, 42, 4));
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -74,13 +82,22 @@ export const FooterSea = styled.div`
   z-index: 2;
 `;
 
-export const ToobieAccessory = styled.img`
+export const OgLurry = styled.img`
   position: absolute;
-  transform: rotate(140deg);
-  z-index: 1;
-  filter: blur(3px);
-  width: 700px;
-  height: 800px;
-  opacity: 0.7;
-  animation: ${floatingAnimation} 8s ease-in-out infinite;
+  z-index: 20;
+  width: 200px;
+  height: 200px;
+  opacity: 1;
+  bottom: 200px;
+  animation: ${floatingAnimation} 15s ease-in-out infinite;
+`;
+
+export const FooterText2 = styled.p`
+  font-family: "gochi-hand";
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  opacity: 0.5;
 `;
