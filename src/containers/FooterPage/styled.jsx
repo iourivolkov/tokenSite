@@ -34,7 +34,7 @@ export const Heading = styled.h1`
   color: #7abbbc;
   font-family: "gochi-hand";
   font-size: 128px;
-  margin-top: -400px;
+  margin-top: -300px;
   margin-bottom: -15px;
   z-index: 10;
 `;

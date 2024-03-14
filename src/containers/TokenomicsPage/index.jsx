@@ -5,16 +5,22 @@ import {
   Text,
   BuyButton,
   LurryImage,
+  TokenomicsContainer,
+  TokenomicsTextContainer,
 } from "./styled";
 import Link from "next/link";
 
 const LurrynomicsText = {
   heading: "Lurry-nomics",
   subheading: "Lurry likes to keep things simple",
-  supply: "1,000,000,000 supply",
-  liquidity: "liquidity burned",
-  contract: "contract renounced",
-  utility: "utility...c'mon now...he's just a duck",
+  supplyPrompt: "Supply:",
+  supply: "1,000,000,000",
+  liquidityPrompt: "Liquidity:",
+  liquidity: "burned",
+  contractPrompt: "Contract:",
+  contract: "renounced",
+  utilityPrompt: "Utility:",
+  utility: "wat utility?",
   button: "buy $lurry",
 };
 
@@ -31,10 +37,22 @@ const TokenomicsPage = () => {
       <LurryImage src="/assets/yetiLurry.png" />
       <Heading>{LurrynomicsText.heading}</Heading>
       <Subheading>{LurrynomicsText.subheading}</Subheading>
-      <Text>{LurrynomicsText.supply}</Text>
-      <Text>{LurrynomicsText.liquidity}</Text>
-      <Text>{LurrynomicsText.contract}</Text>
-      <Text>{LurrynomicsText.utility}</Text>
+      <TokenomicsTextContainer>
+        <Text>{LurrynomicsText.supplyPrompt}</Text>
+        <Text>{LurrynomicsText.supply}</Text>
+      </TokenomicsTextContainer>
+      <TokenomicsTextContainer>
+        <Text>{LurrynomicsText.liquidityPrompt}</Text>
+        <Text>{LurrynomicsText.liquidity}</Text>
+      </TokenomicsTextContainer>
+      <TokenomicsTextContainer>
+        <Text>{LurrynomicsText.contractPrompt}</Text>
+        <Text>{LurrynomicsText.contract}</Text>
+      </TokenomicsTextContainer>
+      <TokenomicsTextContainer>
+        <Text>{LurrynomicsText.utilityPrompt}</Text>
+        <Text>{LurrynomicsText.utility}</Text>
+      </TokenomicsTextContainer>
       <Link
         target="_blank"
         href="https://dexscreener.com/solana/432xjvh7zqh85f669hr7ofegkd5cbzd4m3jn41uztc2d"

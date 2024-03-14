@@ -70,3 +70,10 @@ export const LurryImage = styled.img`
   transform: rotate(-90deg);
   animation: ${slideAnimation} 15s linear infinite;
 `;
+
+export const TokenomicsTextContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+`;
