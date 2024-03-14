@@ -4,13 +4,13 @@ import "../../styles/fonts.css";
 
 const bananaAnimation = keyframes`
   0% {
-    transform: translateY(0) rotate(17deg) ;
+    transform: translateY(0) rotate(40deg) ;
   }
   50% {
-    transform: translateY(-20px) rotate(17deg);
+    transform: translateY(-20px) rotate(40deg);
   }
   100% {
-    transform: translateY(0) rotate(17deg);
+    transform: translateY(0) rotate(40deg);
   }
 `;
 const toobieAnimation = keyframes`
@@ -70,13 +70,13 @@ const branchAnimation = keyframes`
 `;
 const polkaAnimation = keyframes`
   0% {
-    transform: translateY(0) rotate(80deg) ;
+    transform: translateY(0) rotate(20deg) ;
   }
   50% {
-    transform: translateY(-20px) rotate(80deg);
+    transform: translateY(-20px) rotate(20deg);
   }
   100% {
-    transform: translateY(0) rotate(80deg);
+    transform: translateY(0) rotate(20deg);
   }
 `;
 const canhatAnimation = keyframes`
@@ -127,7 +127,7 @@ export const Text = styled.p`
   width: 30ch;
 `;
 
-const getRandomPosition = () => `${Math.random() * 100}vw`;
+// const getRandomPosition = () => `${Math.random() * 100}vw`;
 
 export const LorePageContainer = styled.div`
   position: relative;
@@ -137,12 +137,12 @@ export const PolkaToobieAccessory = styled.img`
   position: absolute;
   transform: rotate(140deg);
   z-index: 1;
-  filter: blur(1px);
-  width: 700px;
-  height: 800px;
-  opacity: 0.9;
-  top: ${getRandomPosition()};
-  left: ${getRandomPosition()};
+  filter: blur(6px);
+  width: 1000px;
+  height: 900px;
+  opacity: 0.7;
+  top: 200px;
+  left: -100px;
   animation: ${polkaAnimation} 8s ease-in-out infinite;
 `;
 
@@ -150,14 +150,55 @@ export const BranchAccessory = styled.img`
   position: absolute;
   transform: rotate(140deg);
   z-index: 9;
-  filter: blur(1px);
+  filter: blur(1.5px);
   width: 700px;
   height: 800px;
   opacity: 0.8;
-  top: ${getRandomPosition()};
-  left: ${getRandomPosition()};
-  animation: ${branchAnimation} 10s ease-in-out infinite;
+  top: 10px;
+  left: 100px;
+  animation: ${branchAnimation} 12s ease-in-out infinite;
 `;
+
+export const ToobieAccessory = styled.img`
+  position: absolute;
+  transform: rotate(140deg);
+  z-index: 1;
+  filter: blur(4px);
+  width: 700px;
+  height: 800px;
+  opacity: 0.7;
+  top: 0px;
+  left: 1000px;
+  animation: ${toobieAnimation} 6s ease-in-out infinite;
+`;
+
+export const OrangeFishAccessory = styled.img`
+  position: absolute;
+  transform: rotate(10deg);
+  z-index: 11;
+  height: 400px;
+  width: 350px;
+  opacity: 0.9;
+  top: 800px;
+  filter: blur(2px);
+  right: 150px;
+  animation: ${fishhatAnimation} 11s ease-in-out infinite;
+`;
+
+export const BananaHatAccessory = styled.img`
+  position: absolute;
+  transform: rotate(10deg);
+  z-index: 11;
+  /* filter: blur(1px); */
+  height: 1500px;
+  width: 1500px;
+  opacity: 1;
+  top: -200px;
+  right: -20px;
+  animation: ${bananaAnimation} 15s ease-in-out infinite;
+`;
+
+// UNUSED
 
 export const CanhatAccessory = styled.img`
   position: absolute;
@@ -167,22 +208,9 @@ export const CanhatAccessory = styled.img`
   width: 700px;
   height: 800px;
   opacity: 0.7;
-  top: ${getRandomPosition()};
-  left: ${getRandomPosition()};
+  top: 100px;
+  left: 500px;
   animation: ${canhatAnimation} 8s ease-in-out infinite;
-`;
-
-export const ToobieAccessory = styled.img`
-  position: absolute;
-  transform: rotate(140deg);
-  z-index: 1;
-  filter: blur(3px);
-  width: 700px;
-  height: 800px;
-  opacity: 0.7;
-  top: ${getRandomPosition()};
-  left: ${getRandomPosition()};
-  animation: ${toobieAnimation} 8s ease-in-out infinite;
 `;
 
 export const AquariumAccessory = styled.img`
@@ -193,33 +221,9 @@ export const AquariumAccessory = styled.img`
   height: 400px;
   width: 400px;
   opacity: 0.8;
-  top: ${getRandomPosition()};
-  left: ${getRandomPosition()};
+  top: 300px;
+  left: 900px;
   animation: ${aquariumAnimation} 8s ease-in-out infinite;
-`;
-
-export const OrangeFishAccessory = styled.img`
-  position: absolute;
-  transform: rotate(10deg);
-  z-index: 11;
-  height: 800px;
-  width: 700px;
-  opacity: 0.9;
-  top: ${getRandomPosition()};
-  left: ${getRandomPosition()};
-  animation: ${fishhatAnimation} 6s ease-in-out infinite;
-`;
-
-export const BananaHatAccessory = styled.img`
-  position: absolute;
-  transform: rotate(10deg);
-  z-index: 3;
-  height: 900px;
-  width: 800px;
-  opacity: 0.7;
-  top: ${getRandomPosition()};
-  left: ${getRandomPosition()};
-  animation: ${bananaAnimation} 3s ease-in-out infinite;
 `;
 
 export const IcecreamAccessory = styled.img`
@@ -230,7 +234,7 @@ export const IcecreamAccessory = styled.img`
   width: 300px;
   opacity: 0.9;
   filter: blur(2px);
-  top: ${getRandomPosition()};
-  left: ${getRandomPosition()};
+  top: 400px;
+  left: 9px;
   animation: ${icecreamAnimation} 9s ease-in-out infinite;
 `;

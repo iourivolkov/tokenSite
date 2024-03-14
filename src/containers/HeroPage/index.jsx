@@ -27,11 +27,11 @@ const HeroPage = () => {
   return (
     <LorePageContainer>
       <PolkaToobieAccessory src="/assets/polkaToobie.png" />
-      <CanhatAccessory src="/assets/canhat.png" />
+      {/* <CanhatAccessory src="/assets/canhat.png" /> */}
       <BranchAccessory src="/assets/branch.png" />
       <BananaHatAccessory src="/assets/bananaHat.png" />
-      <IcecreamAccessory src="/assets/iceCream.png" />
-      <AquariumAccessory src="/assets/fishBowl.png" />
+      {/* <IcecreamAccessory src="/assets/iceCream.png" /> */}
+      {/* <AquariumAccessory src="/assets/fishBowl.png" /> */}
       <ToobieAccessory src="/assets/bananaToobie.png" />
       <OrangeFishAccessory src="/assets/orangeFish.png" />
       <HeroPageContainer>
