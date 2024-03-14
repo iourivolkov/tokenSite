@@ -8,6 +8,10 @@ import {
   OrangeFishAccessory,
   BananaHatAccessory,
   IcecreamAccessory,
+  LorePageContainer,
+  PolkaToobieAccessory,
+  BranchAccessory,
+  CanhatAccessory,
 } from "./styled";
 
 const HeroPageText = {
@@ -17,12 +21,14 @@ const HeroPageText = {
     "Lurry was a simple duck until one day, he discovered crypto twitter. Since then, Lurry spent all his days thinking about meme coins. Instead of quacking, he started saying things like 'wagmi' and calling other ducks 'poors'. Lurry was never the same since. ",
 };
 
-// @TODO - rotate and position elements across the page
-// @TODO - adjust z-index, opacity,blur, size of each element to create 3d effect
+// @TODO - adjust position of randomly dispered elements -> ideally, they should be fixed to the lore page component
 
 const HeroPage = () => {
   return (
-    <>
+    <LorePageContainer>
+      <PolkaToobieAccessory src="/assets/polkaToobie.png" />
+      <CanhatAccessory src="/assets/canhat.png" />
+      <BranchAccessory src="/assets/branch.png" />
       <BananaHatAccessory src="/assets/bananaHat.png" />
       <IcecreamAccessory src="/assets/iceCream.png" />
       <AquariumAccessory src="/assets/fishBowl.png" />
@@ -33,7 +39,7 @@ const HeroPage = () => {
         <Subheading>{HeroPageText.subheading}</Subheading>
         <Text>{HeroPageText.paragraph}</Text>
       </HeroPageContainer>
-    </>
+    </LorePageContainer>
   );
 };
 
