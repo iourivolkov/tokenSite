@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const LandingPageDiv = styled.div`
-  background-color: #edfffe;
+  background-color: #bce8f7;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -11,7 +11,7 @@ export const LandingPageDiv = styled.div`
 
 export const CloudsAndSunDiv = styled.div`
   display: flex;
-  justify-content: space-between;
+
   align-items: flex-start;
   width: 100%;
 `;

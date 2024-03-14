@@ -6,6 +6,7 @@ import {
   SocialButtonContainer,
   FooterSea,
   OgLurry,
+  OgLurrySmol1,
   FooterText2,
 } from "./styled";
 import Link from "next/link";
@@ -25,6 +26,7 @@ const FooterPage = () => {
   return (
     <FooterPageContainer>
       <OgLurry src="/assets/originalLurry.png" />
+      <OgLurrySmol1 src="/assets/originalLurry.png" />
       <Heading>{FooterText.heading}</Heading>
       <Subheading>{FooterText.subheading}</Subheading>
       <SocialButtonContainer>

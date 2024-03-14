@@ -59,13 +59,13 @@ const fishhatAnimation = keyframes`
 `;
 const branchAnimation = keyframes`
   0% {
-    transform: translateY(0) rotate(25deg) ;
+    transform: translateY(0) rotate(-30deg) ;
   }
   50% {
-    transform: translateY(-20px) rotate(25deg);
+    transform: translateY(-20px) rotate(-30deg);
   }
   100% {
-    transform: translateY(0) rotate(25deg);
+    transform: translateY(0) rotate(-30deg);
   }
 `;
 const polkaAnimation = keyframes`
@@ -99,7 +99,7 @@ export const HeroPageContainer = styled.div`
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: #edfffe;
+  background-color: #ffffff;
 `;
 
 export const Heading = styled.h1`
@@ -127,8 +127,6 @@ export const Text = styled.p`
   width: 30ch;
 `;
 
-// const getRandomPosition = () => `${Math.random() * 100}vw`;
-
 export const LorePageContainer = styled.div`
   position: relative;
 `;
@@ -148,12 +146,11 @@ export const PolkaToobieAccessory = styled.img`
 
 export const BranchAccessory = styled.img`
   position: absolute;
-  transform: rotate(140deg);
   z-index: 9;
-  filter: blur(1.5px);
-  width: 700px;
-  height: 800px;
-  opacity: 0.8;
+  filter: blur(1px);
+  width: 900px;
+  height: 1000px;
+  opacity: 1;
   top: 10px;
   left: 100px;
   animation: ${branchAnimation} 12s ease-in-out infinite;
@@ -161,7 +158,6 @@ export const BranchAccessory = styled.img`
 
 export const ToobieAccessory = styled.img`
   position: absolute;
-  transform: rotate(140deg);
   z-index: 1;
   filter: blur(4px);
   width: 700px;
@@ -174,22 +170,19 @@ export const ToobieAccessory = styled.img`
 
 export const OrangeFishAccessory = styled.img`
   position: absolute;
-  transform: rotate(10deg);
   z-index: 11;
-  height: 400px;
-  width: 350px;
+  height: 6%00px;
+  width: 550px;
   opacity: 0.9;
   top: 800px;
-  filter: blur(2px);
+  /* filter: blur(2px); */
   right: 150px;
   animation: ${fishhatAnimation} 11s ease-in-out infinite;
 `;
 
 export const BananaHatAccessory = styled.img`
   position: absolute;
-  transform: rotate(10deg);
   z-index: 11;
-  /* filter: blur(1px); */
   height: 1500px;
   width: 1500px;
   opacity: 1;
@@ -202,7 +195,6 @@ export const BananaHatAccessory = styled.img`
 
 export const CanhatAccessory = styled.img`
   position: absolute;
-  transform: rotate(140deg);
   z-index: 1;
   filter: blur(3px);
   width: 700px;

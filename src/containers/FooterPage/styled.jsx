@@ -10,23 +10,13 @@ const floatingAnimation = keyframes`
   }
 `;
 
-const floatingAnimation2 = keyframes`
-  0% {
-    transform: translateX(-1000%) ;
-  }
-  
-  100% {
-    transform: translateX(1000%) ;
-  }
-`;
-
 export const FooterPageContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #edfffe;
+  background-color: #ffffff;
   position: relative;
 `;
 
@@ -74,22 +64,32 @@ export const SocialButton = styled.button`
 `;
 
 export const FooterSea = styled.div`
-  background: linear-gradient(rgb(113, 64, 21), rgb(69, 42, 4));
+  background: linear-gradient(rgb(86, 84, 233), rgb(23, 23, 142));
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 400px;
+  height: 200px;
   z-index: 2;
 `;
 
 export const OgLurry = styled.img`
   position: absolute;
   z-index: 20;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   opacity: 1;
-  bottom: 200px;
+  bottom: 100px;
   animation: ${floatingAnimation} 15s ease-in-out infinite;
+`;
+
+export const OgLurrySmol1 = styled.img`
+  position: absolute;
+  z-index: 20;
+  width: 150px;
+  height: 150px;
+  opacity: 1;
+  bottom: 100px;
+  animation: ${floatingAnimation} 9s ease-in-out infinite;
 `;
 
 export const FooterText2 = styled.p`

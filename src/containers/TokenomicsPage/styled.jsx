@@ -17,7 +17,7 @@ export const TokenomicsPageContainer = styled.div`
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: #edfffe;
+  background-color: #ffffff;
 `;
 
 export const Heading = styled.h1`
