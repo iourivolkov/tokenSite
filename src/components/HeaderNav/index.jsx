@@ -5,8 +5,18 @@ import {
   NavLogoSpan,
 } from "./styled";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { useEffect, useState } from "react";
 
 const HeaderNav = () => {
+  const [isScrolling, setIsScrolling] = useState(false);
+
+  useEffect(() => {
+    const scrollStatus = () => {
+      setIsScrolling(window.scrollY >= 0);
+    };
+    scrollStatus();
+  }, []);
+
   return (
     <>
       <Navigation>
