@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <LandingPage />
-      <LurryNamePage />
+      {/* <LurryNamePage /> */}
       <HeroPage />
       <TokenomicsPage />
       <FooterPage />

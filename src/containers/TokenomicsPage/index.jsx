@@ -7,6 +7,14 @@ import {
   LurryImage,
   TokenomicsContainer,
   TokenomicsTextContainer,
+  LurryCoin1,
+  LurryCoin2,
+  LurryCoin3,
+  LurryCoin4,
+  LurryCoin5,
+  LurryCoin6,
+  LurryCoin7,
+  LurryCoin8,
 } from "./styled";
 import Link from "next/link";
 
@@ -20,12 +28,11 @@ const LurrynomicsText = {
   contractPrompt: "Contract:",
   contract: "renounced",
   utilityPrompt: "Utility:",
-  utility: "wat utility?",
+  utility: "...tbd",
   button: "buy $lurry",
 };
 
 // @TODO - add correct dex link once contract is live
-// @TODO - add diff font color to text?
 
 const TokenomicsPage = () => {
   function handleBuy() {
@@ -34,7 +41,15 @@ const TokenomicsPage = () => {
 
   return (
     <TokenomicsPageContainer>
-      <LurryImage src="/assets/yetiLurry.png" />
+      <LurryCoin1 src="/assets/lurryCoin.png" />
+      <LurryCoin2 src="/assets/lurryCoin.png" />
+      <LurryCoin3 src="/assets/lurryCoin.png" />
+      <LurryCoin4 src="/assets/lurryCoin.png" />
+      <LurryCoin5 src="/assets/lurryCoin.png" />
+      <LurryCoin6 src="/assets/lurryCoin.png" />
+      <LurryCoin7 src="/assets/lurryCoin.png" />
+      <LurryCoin8 src="/assets/lurryCoin.png" />
+      {/* <LurryImage src="/assets/lurryCoin.png" /> */}
       <Heading>{LurrynomicsText.heading}</Heading>
       <Subheading>{LurrynomicsText.subheading}</Subheading>
       <TokenomicsTextContainer>

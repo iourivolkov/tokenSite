@@ -3,15 +3,8 @@ import {
   Subheading,
   Text,
   HeroPageContainer,
-  ToobieAccessory,
-  AquariumAccessory,
-  OrangeFishAccessory,
-  BananaHatAccessory,
-  IcecreamAccessory,
   LorePageContainer,
-  PolkaToobieAccessory,
-  BranchAccessory,
-  CanhatAccessory,
+  LurryImage,
 } from "./styled";
 
 const HeroPageText = {
@@ -26,14 +19,7 @@ const HeroPageText = {
 const HeroPage = () => {
   return (
     <LorePageContainer>
-      <PolkaToobieAccessory src="/assets/polkaToobie.png" />
-      {/* <CanhatAccessory src="/assets/canhat.png" /> */}
-      <BranchAccessory src="/assets/branch.png" />
-      {/* <BananaHatAccessory src="/assets/bananaHat.png" /> */}
-      {/* <IcecreamAccessory src="/assets/iceCream.png" /> */}
-      {/* <AquariumAccessory src="/assets/fishBowl.png" /> */}
-      <ToobieAccessory src="/assets/bananaToobie.png" />
-      <OrangeFishAccessory src="/assets/orangeFish.png" />
+      <LurryImage src="/assets/susLurry.png" />
       <HeroPageContainer>
         <Heading>{HeroPageText.heading}</Heading>
         <Subheading>{HeroPageText.subheading}</Subheading>

@@ -10,30 +10,38 @@ const floatingAnimation = keyframes`
   }
 `;
 
+export const FooterPageTextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 50%;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const FooterPageContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
   background-color: #ffffff;
   position: relative;
 `;
 
 export const Heading = styled.h1`
-  color: #7abbbc;
-  font-family: "gochi-hand";
-  font-size: 128px;
+  color: #000;
+  font-family: "handjet-bold";
+  font-size: 200px;
   margin-top: -300px;
   margin-bottom: -15px;
   z-index: 10;
 `;
 
 export const Subheading = styled.p`
-  font-family: "gochi-hand";
+  font-family: "handjet-regular";
   font-size: 20px;
   margin-top: 20px;
-  color: #7abbbc;
+  color: #000;
   z-index: 10;
 `;
 
@@ -48,17 +56,17 @@ export const SocialButtonContainer = styled.div`
 
 export const SocialButton = styled.button`
   border-radius: 60%;
-  color: #fff;
-  background-color: #7abbbc;
+  color: #000;
+  background-color: #f7c600;
   height: 65px;
   width: 65px;
   border: none;
-  font-family: "gochi-hand";
+  font-family: "handjet-regular";
   font-size: 36px;
   cursor: pointer;
 
   &:hover {
-    background-color: #589b9c;
+    color: #fff;
     transition: all ease-in 0.2s;
   }
 `;
@@ -72,32 +80,48 @@ export const FooterSea = styled.div`
   z-index: 2;
 `;
 
-export const OgLurry = styled.img`
-  position: absolute;
-  z-index: 20;
-  width: 250px;
-  height: 250px;
-  opacity: 1;
-  bottom: 100px;
-  animation: ${floatingAnimation} 15s ease-in-out infinite;
-`;
-
-export const OgLurrySmol1 = styled.img`
-  position: absolute;
-  z-index: 20;
-  width: 150px;
-  height: 150px;
-  opacity: 1;
-  bottom: 100px;
-  animation: ${floatingAnimation} 9s ease-in-out infinite;
-`;
-
 export const FooterText2 = styled.p`
-  font-family: "gochi-hand";
-  color: #fff;
+  font-family: "handjet-regular";
+  color: #000;
   font-size: 20px;
   position: absolute;
   bottom: 10px;
   left: 20px;
   opacity: 0.5;
+`;
+
+export const IceLurryImage = styled.img`
+  position: absolute;
+  height: 1000px;
+  bottom: -80px;
+  left: -500px;
+  z-index: 2;
+  transform: rotate(30deg) scaleX(-1);
+`;
+
+export const FurryLurryImage = styled.img`
+  position: absolute;
+  height: 1000px;
+  bottom: -80px;
+  right: -500px;
+  z-index: 2;
+  transform: rotate(-34deg);
+`;
+
+export const FurryLurryQuote = styled.p`
+  font-family: "handjet-regular";
+  font-size: 28px;
+  top: 300px;
+  left: 250px;
+  transform: rotate(30deg);
+  position: absolute;
+`;
+
+export const YetiLurryQuote = styled.p`
+  font-family: "handjet-regular";
+  font-size: 40px;
+  top: 250px;
+  right: 250px;
+  transform: rotate(-30deg);
+  position: absolute;
 `;

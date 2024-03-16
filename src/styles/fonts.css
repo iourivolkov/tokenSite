@@ -1,8 +1,78 @@
 @font-face {
-  font-family: "gochi-hand";
-  src: url("/fonts/GochiHand-Regular.ttf") format("truetype");
+  font-family: "handjet-black";
+  src: url("/fonts/Handjet-Black.ttf") format("truetype");
+  font-display: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "handjet-bold";
+  src: url("/fonts/Handjet-Bold.ttf") format("truetype");
+  font-display: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "handjet-extraBold";
+  src: url("/fonts/Handjet-ExtraBold.ttf") format("truetype");
+  font-display: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "handjet-extraLight";
+  src: url("/fonts/Handjet-ExtraLight.ttf") format("truetype");
+  font-display: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "handjet-light";
+  src: url("/fonts/Handjet-Light.ttf") format("truetype");
+  font-display: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "handjet-medium";
+  src: url("/fonts/Handjet-Medium.ttf") format("truetype");
+  font-display: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "handjet-regular";
+  src: url("/fonts/Handjet-Regular.ttf") format("truetype");
   font-display: auto;
   font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "handjet-semibold";
+  src: url("/fonts/Handjet-SemiBold.ttf") format("truetype");
+  font-display: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "handjet-thin";
+  src: url("/fonts/Handjet-Thin.ttf") format("truetype");
+  font-display: auto;
+  font-weight: 100;
   font-style: normal;
   font-stretch: normal;
 }

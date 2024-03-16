@@ -8,6 +8,11 @@ import {
   OgLurry,
   OgLurrySmol1,
   FooterText2,
+  FooterPageTextContainer,
+  IceLurryImage,
+  FurryLurryImage,
+  FurryLurryQuote,
+  YetiLurryQuote,
 } from "./styled";
 import Link from "next/link";
 
@@ -25,21 +30,22 @@ const FooterText = {
 const FooterPage = () => {
   return (
     <FooterPageContainer>
-      <OgLurry src="/assets/originalLurry.png" />
-      <OgLurrySmol1 src="/assets/originalLurry.png" />
-      <Heading>{FooterText.heading}</Heading>
-      <Subheading>{FooterText.subheading}</Subheading>
-      <SocialButtonContainer>
-        <Link target="_blank" href="https://twitter.com/lurrytheduck">
-          <SocialButton>{FooterText.xButton}</SocialButton>
-        </Link>
-        <Link target="_blank" href="">
-          <SocialButton>{FooterText.tgButton}</SocialButton>
-        </Link>
-      </SocialButtonContainer>
-      <FooterSea>
-        <FooterText2>Powered by LurryLabs</FooterText2>
-      </FooterSea>
+      <FooterPageTextContainer>
+        <FurryLurryQuote>wagmi?</FurryLurryQuote>
+        <YetiLurryQuote>no cap fr fr</YetiLurryQuote>
+        <IceLurryImage src="/assets/yetiLurry.png" />
+        <FurryLurryImage src="/assets/furryLurry.png" />
+        <Heading>{FooterText.heading}</Heading>
+        <Subheading>{FooterText.subheading}</Subheading>
+        <SocialButtonContainer>
+          <Link target="_blank" href="https://twitter.com/lurrytheduck">
+            <SocialButton>{FooterText.xButton}</SocialButton>
+          </Link>
+          <Link target="_blank" href="">
+            <SocialButton>{FooterText.tgButton}</SocialButton>
+          </Link>
+        </SocialButtonContainer>
+      </FooterPageTextContainer>
     </FooterPageContainer>
   );
 };
