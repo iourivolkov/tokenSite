@@ -25,6 +25,15 @@ export const NavItemSpan = styled.span`
   color: #000;
 
   &:hover {
-    color: #fff;
+    color: #ffcd00;
   }
+`;
+
+export const NavLogoSpan = styled.span`
+  font-size: 20px;
+  font-family: "handjet-regular";
+  margin: 0 10px 0 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #000;
 `;
