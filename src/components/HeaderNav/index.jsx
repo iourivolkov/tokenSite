@@ -7,15 +7,6 @@ import {
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const HeaderNav = () => {
-  // useEffect(() => {
-  //   const scrollStatus = () => {
-  //     setIsScrolling(window.scrollY >= 20);
-  //   };
-  // }, []);
-  // function scrollToTop() {
-  //   window.scroll({ top: 0, behavior: "smooth" });
-  // }
-
   return (
     <>
       <Navigation>
