@@ -1,9 +1,6 @@
-import {
-  Navigation,
-  NavigationItem,
-  NavItemContainer,
-  NavItemSpan,
-} from "./styled";
+import { Navigation, NavItemContainer, NavItemSpan } from "./styled";
+
+import Link from "next/link";
 
 const HeaderNav = () => {
   // useEffect(() => {
@@ -18,11 +15,19 @@ const HeaderNav = () => {
   return (
     <>
       <Navigation>
-        <NavigationItem>Lurry</NavigationItem>
+        <NavItemSpan>
+          <Link href="#home-page">Lurry</Link>
+        </NavItemSpan>
         <NavItemContainer>
-          <NavItemSpan>lurry lore</NavItemSpan>
-          <NavItemSpan>lurrynomics</NavItemSpan>
-          <NavItemSpan>lurry frens</NavItemSpan>
+          <NavItemSpan>
+            <Link href="#hero-page">about</Link>
+          </NavItemSpan>
+          <NavItemSpan>
+            <Link href="#tokenomics-page">tokenomics</Link>
+          </NavItemSpan>
+          <NavItemSpan>
+            <Link href="#footer-page">community</Link>
+          </NavItemSpan>
         </NavItemContainer>
       </Navigation>
     </>

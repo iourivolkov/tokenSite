@@ -18,7 +18,7 @@ const HeroPageText = {
 
 const HeroPage = () => {
   return (
-    <LorePageContainer>
+    <LorePageContainer id="hero-page">
       <LurryImage src="/assets/susLurry.png" />
       <HeroPageContainer>
         <Heading>{HeroPageText.heading}</Heading>

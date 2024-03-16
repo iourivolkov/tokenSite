@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const LandingPageDiv = styled.div`
-  background-color: #bce8f7;
+  background: linear-gradient(#d8f8ff, #ffffff);
   width: 100vw;
   height: 100vh;
   display: flex;

@@ -40,7 +40,7 @@ const TokenomicsPage = () => {
   }
 
   return (
-    <TokenomicsPageContainer>
+    <TokenomicsPageContainer id="tokenomics-page">
       <LurryCoin1 src="/assets/lurryCoin.png" />
       <LurryCoin2 src="/assets/lurryCoin.png" />
       <LurryCoin3 src="/assets/lurryCoin.png" />

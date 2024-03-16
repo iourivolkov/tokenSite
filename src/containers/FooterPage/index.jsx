@@ -29,7 +29,7 @@ const FooterText = {
 
 const FooterPage = () => {
   return (
-    <FooterPageContainer>
+    <FooterPageContainer id="footer-page">
       <FooterPageTextContainer>
         <FurryLurryQuote>wagmi?</FurryLurryQuote>
         <YetiLurryQuote>no cap fr fr</YetiLurryQuote>

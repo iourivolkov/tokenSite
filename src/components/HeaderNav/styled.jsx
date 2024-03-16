@@ -4,6 +4,7 @@ export const Navigation = styled.ul`
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  align-items: center;
   position: fixed;
   top: 0px;
   width: 100%;
@@ -16,18 +17,14 @@ export const NavItemContainer = styled.div`
 `;
 
 export const NavItemSpan = styled.span`
-  font-size: 14px;
-  font-family: "gochi-hand";
-  margin: 0 5px 0 5px;
-  text-transform: capitalize;
+  font-size: 20px;
+  font-family: "handjet-regular";
+  margin: 0 10px 0 10px;
+  text-transform: uppercase;
   cursor: pointer;
-  color: #7abbbc;
+  color: #000;
 
   &:hover {
     color: #fff;
   }
-`;
-
-export const NavigationItemContainer = styled.div`
-  display: flex;
 `;

@@ -35,7 +35,7 @@ const LandingPage = () => {
   }, []);
 
   return (
-    <LandingPageDiv>
+    <LandingPageDiv id="home-page">
       <CloudsAndSunDiv>
         <LeftCloud
           id="left-cloud"
