@@ -64,7 +64,7 @@ const lurryCoin5Animation = keyframes`
     transform: translateY(-20px) rotate(25deg);
   }
   100% {
-    transform: translateY(0) rotate(25deg);
+    transform: translateY(0) rotate(30deg);
   }
 `;
 const lurryCoin6Animation = keyframes`
@@ -83,7 +83,7 @@ const lurryCoin7Animation = keyframes`
     transform: translateY(0) rotate(70deg) ;
   }
   50% {
-    transform: translateY(-2px) rotate(70deg);
+    transform: translateY(-4px) rotate(67deg);
   }
   100% {
     transform: translateY(0) rotate(70deg);
@@ -106,7 +106,7 @@ const lurryCoin8Animation = keyframes`
 export const LurryCoin1 = styled.img`
   position: absolute;
   z-index: 1;
-  /* filter: blur(4px); */
+  filter: blur(4px);
   width: 200px;
   height: 500px;
   opacity: 0.9;
@@ -119,7 +119,7 @@ export const LurryCoin1 = styled.img`
 export const LurryCoin2 = styled.img`
   position: absolute;
   z-index: 1;
-  /* filter: blur(4px); */
+  filter: blur(2px);
   width: 200px;
   height: 80px;
   opacity: 0.7;
@@ -132,7 +132,7 @@ export const LurryCoin2 = styled.img`
 export const LurryCoin3 = styled.img`
   position: absolute;
   z-index: 1;
-  /* filter: blur(6px); */
+  filter: blur(3px);
   width: 120px;
   height: 400px;
   opacity: 1;
@@ -145,12 +145,12 @@ export const LurryCoin3 = styled.img`
 export const LurryCoin4 = styled.img`
   position: absolute;
   z-index: 1;
-  /* filter: blur(7px); */
+  filter: blur(2px);
   width: 200px;
-  height: 200px;
-  opacity: 0.5;
-  top: 200px;
-  left: -100px;
+  height: 100px;
+  opacity: 0.8;
+  top: 500px;
+  left: 100px;
   animation: ${lurryCoin4Animation} 8s ease-in-out infinite;
   border: 1px solid red;
 `;
@@ -158,12 +158,12 @@ export const LurryCoin4 = styled.img`
 export const LurryCoin5 = styled.img`
   position: absolute;
   z-index: 1;
-  /* filter: blur(1px); */
+  filter: blur(1px);
   width: 100px;
   height: 100px;
   opacity: 0.9;
-  bottom: -100px;
-  left: 20px;
+  bottom: 300px;
+  left: 600px;
   animation: ${lurryCoin5Animation} 8s ease-in-out infinite;
   border: 1px solid purple;
 `;
@@ -171,7 +171,7 @@ export const LurryCoin5 = styled.img`
 export const LurryCoin6 = styled.img`
   position: absolute;
   z-index: 2;
-  /* filter: blur(2px); */
+  filter: blur(1px);
   width: 100px;
   height: 250px;
   opacity: 1;
@@ -185,8 +185,8 @@ export const LurryCoin7 = styled.img`
   position: absolute;
   z-index: 1;
   /* filter: blur(1px); */
-  width: 280px;
-  height: 590px;
+  width: 300px;
+  height: 790px;
   opacity: 1;
   top: 290px;
   right: 300px;
@@ -256,7 +256,7 @@ export const BuyButton = styled.button`
   font-size: 24px;
   text-transform: uppercase;
   margin-top: 75px;
-  z-index: 10000;
+  z-index: 100000;
   opacity: 0.8;
 
   &:hover {
