@@ -11,7 +11,6 @@ export const LandingPageDiv = styled.div`
 
 export const CloudsAndSunDiv = styled.div`
   display: flex;
-
   align-items: flex-start;
   width: 100%;
 `;
@@ -37,7 +36,8 @@ export const RightCloud = styled.img`
 export const LurrySun = styled.img`
   position: absolute;
   width: clamp(50rem, 20vw, 30rem);
-  right: 20%;
+  right: 30%;
+  top: 15%;
   margin-top: -90px;
   z-index: 2;
 `;

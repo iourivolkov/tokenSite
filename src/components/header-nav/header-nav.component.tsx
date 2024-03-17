@@ -12,7 +12,7 @@ export const HeaderNav = () => {
 
   useEffect(() => {
     const scrollStatus = () => {
-      setIsScrolling(window.scrollY > 20);
+      setIsScrolling(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", scrollStatus);
@@ -26,7 +26,7 @@ export const HeaderNav = () => {
     <>
       <Navigation isHidden={!isScrolling}>
         <NavLogoSpan>
-          <Link spy={true} smooth={true} duration={200} to="home-page">
+          <Link spy={true} smooth={true} duration={100} to="home-page">
             Lurry
           </Link>
         </NavLogoSpan>
