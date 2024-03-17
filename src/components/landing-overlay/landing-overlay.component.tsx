@@ -23,7 +23,7 @@ const LandingOverlay = () => {
         <OverlayContainer fadeOut={fadeOut}>
           <OverlayHeading onClick={handleCloseOverlay}>Quack!</OverlayHeading>
           <OverlaySubheading>
-            It means "press the button" in duckspeak...duh
+            It means "click" in duckspeak...duh
           </OverlaySubheading>
         </OverlayContainer>
       )}
