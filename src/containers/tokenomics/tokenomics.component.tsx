@@ -14,7 +14,14 @@ import {
   LurryCoin7,
   LurryCoin8,
   LurryCoin9,
+  ClickToCopy,
 } from "./tokenomics.styled";
+import { useState } from "react";
+
+import { CopyToClipboard } from "react-copy-to-clipboard";
+
+// @TODO - confirm tokenomics w/ team
+// @TODO - add copy button to contract
 
 const LurrynomicsText = {
   heading: "Lurry-nomics",
@@ -22,9 +29,15 @@ const LurrynomicsText = {
   supplyPrompt: "Supply:",
   supply: "1,000,000,000",
   liquidityPrompt: "Liquidity:",
-  liquidity: "burned",
+  liquidity: "50%",
+  teamPrompt: "Team:",
+  team: "6%",
+  marketingPrompt: "Marketing:",
+  marketing: "2%",
+  collaborationsPrompt: "Collaborations:",
+  collaborations: "2%",
   contractPrompt: "Contract:",
-  contract: "renounced",
+  contract: "click to copy",
   utilityPrompt: "Utility:",
   utility: "...tbd",
   button: "buy $lurry",
@@ -33,6 +46,13 @@ const LurrynomicsText = {
 // @TODO - add correct dex link once contract is live
 
 export const TokenomicsContainer = () => {
+  const [showCopiedModal, setShowCopiedModal] = useState(false);
+
+  function handleCopy() {
+    setShowCopiedModal(true);
+    setTimeout(() => setShowCopiedModal(false), 1500);
+  }
+
   function handleBuy() {
     console.log("redirect to dextools");
   }
@@ -59,9 +79,30 @@ export const TokenomicsContainer = () => {
         <Text>{LurrynomicsText.liquidityPrompt}</Text>
         <Text>{LurrynomicsText.liquidity}</Text>
       </TokenomicsTextContainer>
+
+      <TokenomicsTextContainer>
+        <Text>{LurrynomicsText.teamPrompt}</Text>
+        <Text>{LurrynomicsText.team}</Text>
+      </TokenomicsTextContainer>
+
+      <TokenomicsTextContainer>
+        <Text>{LurrynomicsText.marketingPrompt}</Text>
+        <Text>{LurrynomicsText.marketing}</Text>
+      </TokenomicsTextContainer>
+
+      <TokenomicsTextContainer>
+        <Text>{LurrynomicsText.collaborationsPrompt}</Text>
+        <Text>{LurrynomicsText.collaborations}</Text>
+      </TokenomicsTextContainer>
+
       <TokenomicsTextContainer>
         <Text>{LurrynomicsText.contractPrompt}</Text>
-        <Text>{LurrynomicsText.contract}</Text>
+        <CopyToClipboard
+          text="https://dexscreener.com/solana/432xjvh7zqh85f669hr7ofegkd5cbzd4m3jn41uztc2d"
+          onCopy={(text, result) => console.log(result)}
+        >
+          <ClickToCopy>{LurrynomicsText.contract}</ClickToCopy>
+        </CopyToClipboard>
       </TokenomicsTextContainer>
       <TokenomicsTextContainer>
         <Text>{LurrynomicsText.utilityPrompt}</Text>

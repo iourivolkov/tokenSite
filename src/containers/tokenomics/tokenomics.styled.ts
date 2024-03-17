@@ -167,6 +167,17 @@ export const Text = styled.p`
   z-index: 10;
 `;
 
+export const ClickToCopy = styled.button`
+  font-family: "handjet-regular";
+  font-size: 48px;
+  color: #000;
+  margin-bottom: -10px;
+  z-index: 10;
+  border: none;
+  background: none;
+  cursor: pointer;
+`;
+
 export const BuyButton = styled.button`
   cursor: pointer;
   width: 240px;
