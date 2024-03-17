@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const OverlayContainer = styled.div`
+export const OverlayContainer = styled.div<{ fadeOut: boolean }>`
   background: #ffcd00;
   opacity: 1;
   height: 100vh;
@@ -13,6 +13,13 @@ export const OverlayContainer = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 100;
+  transition: opacity 1s ease; /* Adjust timing as needed */
+
+  ${(props) =>
+    props.fadeOut &&
+    css`
+      opacity: 0;
+    `}
 `;
 
 export const OverlayHeading = styled.button`
