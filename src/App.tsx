@@ -9,7 +9,6 @@ function App() {
     <>
       <HeaderNav />
       <LandingComponent />
-      {/* <LurryNamePage /> */}
       <HeroContainer />
       <TokenomicsContainer />
       <FooterContainer />
