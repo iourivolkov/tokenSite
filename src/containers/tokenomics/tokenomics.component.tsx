@@ -20,9 +20,6 @@ import { useState } from "react";
 
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-// @TODO - confirm tokenomics w/ team
-// @TODO - add copy button to contract
-
 const LurrynomicsText = {
   heading: "Lurry-nomics",
   subheading: "Lurry likes to keep things simple",

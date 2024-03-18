@@ -21,6 +21,8 @@ export const TokenomicsPageContainer = styled.div`
   align-items: center;
   position: relative;
 
+  padding-bottom: 100px;
+
   @media ${device.md} {
     overflow: hidden;
   }
@@ -86,6 +88,9 @@ export const ClickToCopy = styled.button`
 `;
 
 // ANIMATED COINS
+
+// red, black, green -> diff animation speeds -> 8 7 3
+
 export const LurryCoin1 = styled.img`
   position: absolute;
   z-index: -1;
@@ -95,8 +100,9 @@ export const LurryCoin1 = styled.img`
   opacity: 0.9;
   top: 20px;
   right: 450px;
-  animation: ${lurryCoin1Animation} 8s ease-in-out infinite;
-  /* border: 1px solid blue; */
+  transform: rotate(-46deg);
+  /* animation: ${lurryCoin1Animation} 8s ease-in-out infinite; */
+  border: 1px solid blue;
 `;
 
 export const LurryCoin2 = styled.img`
@@ -108,8 +114,9 @@ export const LurryCoin2 = styled.img`
   opacity: 1;
   bottom: 200px;
   right: 120px;
-  animation: ${lurryCoin2Animation} 8s ease-in-out infinite;
-  /* border: 3px solid orange; */
+  transform: rotate(72deg);
+  /* animation: ${lurryCoin2Animation} 20s ease-in-out infinite; */
+  border: 3px solid orange;
 `;
 
 export const LurryCoin3 = styled.img`
@@ -121,8 +128,8 @@ export const LurryCoin3 = styled.img`
   opacity: 0.98;
   top: 200px;
   right: 500px;
-  animation: ${lurryCoin3Animation} 8s ease-in-out infinite;
-  /* border: 1px solid green; */
+  animation: ${lurryCoin3Animation} 12s ease-in-out infinite;
+  border: 1px solid green;
 `;
 
 export const LurryCoin4 = styled.img`
@@ -134,8 +141,9 @@ export const LurryCoin4 = styled.img`
   opacity: 1;
   top: 300px;
   left: 200px;
-  animation: ${lurryCoin4Animation} 8s ease-in-out infinite;
-  /* border: 1px solid red; */
+  transform: rotate(-34deg);
+  /* animation: ${lurryCoin4Animation} 8s ease-in-out infinite; */
+  border: 1px solid red;
 `;
 
 export const LurryCoin5 = styled.img`
@@ -147,8 +155,9 @@ export const LurryCoin5 = styled.img`
   opacity: 0.9;
   bottom: 230px;
   left: 180px;
-  animation: ${lurryCoin5Animation} 8s ease-in-out infinite;
-  /* border: 1px solid purple; */
+  transform: rotate(30deg);
+  /* animation: ${lurryCoin5Animation} 8s ease-in-out infinite; */
+  border: 1px solid purple;
 `;
 
 export const LurryCoin6 = styled.img`
@@ -160,8 +169,9 @@ export const LurryCoin6 = styled.img`
   opacity: 1;
   top: 30px;
   left: 500px;
-  animation: ${lurryCoin6Animation} 12s ease-in-out infinite;
-  /* border: 1px solid yellow; */
+  transform: rotate(70deg);
+  /* animation: ${lurryCoin6Animation} 12s ease-in-out infinite; */
+  border: 1px solid yellow;
 `;
 
 export const LurryCoin7 = styled.img`
@@ -170,10 +180,10 @@ export const LurryCoin7 = styled.img`
   width: 500px;
   height: 600px;
   opacity: 1;
-  bottom: -200px;
+  bottom: -180px;
   left: 300px;
-  animation: ${lurryCoin7Animation} 5s ease-in-out infinite;
-  /* border: 2px solid black; */
+  animation: ${lurryCoin7Animation} 6s ease-in-out infinite;
+  border: 2px solid black;
 `;
 
 export const LurryCoin8 = styled.img`
@@ -185,23 +195,24 @@ export const LurryCoin8 = styled.img`
   opacity: 0.9;
   top: 120px;
   left: 820px;
-  animation: ${lurryCoin8Animation} 13s ease-in-out infinite;
-  /* border: 3px solid red; */
+  animation: ${lurryCoin8Animation} 9s ease-in-out infinite;
+  border: 3px solid red;
 `;
 
 export const LurryCoin9 = styled.img`
   position: absolute;
-  z-index: -2;
-  /* transform: rotate(-28.3deg);
-  filter: blur(0.5px); */
+  z-index: -1;
+  transform: rotate(-28.3deg);
+  /* filter: blur(0.5px); */
   width: 313px;
   height: 313px;
   opacity: 0.95;
   bottom: 10px;
   right: 480px;
-  animation: ${lurryCoin9Animation} 8s ease-in-out infinite;
-  /* border: 3px solid teal; */
+  /* animation: ${lurryCoin9Animation} 8s ease-in-out infinite; */
+  border: 3px solid teal;
 `;
+// STYLES
 
 export const BuyButton = styled.button`
   cursor: pointer;
