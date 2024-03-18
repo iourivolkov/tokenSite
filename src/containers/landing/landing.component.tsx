@@ -8,6 +8,8 @@ import {
   LurrySun,
 } from "./landing.styled";
 
+import LandingOverlay from "../../components/landing-overlay/landing-overlay.component";
+
 export const LandingComponent = () => {
   const leftCloudRef = useRef<HTMLImageElement>(null);
   const rightCloudRef = useRef<HTMLImageElement>(null);
@@ -35,20 +37,23 @@ export const LandingComponent = () => {
   }, []);
 
   return (
-    <LandingPageDiv id="home-page">
-      <CloudsAndSunDiv>
-        <LeftCloud
-          id="left-cloud"
-          src={"/assets/leftCloud.png"}
-          ref={leftCloudRef}
-        />
-        <LurrySun id="lurry-sun" src={"/assets/lurrySun.png"} ref={sunRef} />
-        <RightCloud
-          id="right-cloud"
-          src={"/assets/rightCloud.png"}
-          ref={rightCloudRef}
-        />
-      </CloudsAndSunDiv>
-    </LandingPageDiv>
+    <>
+      <LandingOverlay />
+      <LandingPageDiv id="home-page">
+        <CloudsAndSunDiv>
+          <LeftCloud
+            id="left-cloud"
+            src={"/assets/leftCloud.png"}
+            ref={leftCloudRef}
+          />
+          <LurrySun id="lurry-sun" src={"/assets/lurrySun.png"} ref={sunRef} />
+          <RightCloud
+            id="right-cloud"
+            src={"/assets/rightCloud.png"}
+            ref={rightCloudRef}
+          />
+        </CloudsAndSunDiv>
+      </LandingPageDiv>
+    </>
   );
 };

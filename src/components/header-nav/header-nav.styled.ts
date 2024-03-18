@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const Navigation = styled.ul`
+export const Navigation = styled.ul<{ isHidden: boolean }>`
   display: flex;
   justify-content: space-between;
   list-style-type: none;
@@ -9,6 +9,13 @@ export const Navigation = styled.ul`
   top: 0px;
   width: 100%;
   z-index: 15;
+  transition: transform 0.6s ease-in-out;
+
+  ${({ isHidden }) =>
+    isHidden &&
+    css`
+      transform: translateY(-100%);
+    `}
 `;
 
 export const NavItemContainer = styled.div`
@@ -32,7 +39,7 @@ export const NavItemSpan = styled.span`
 export const NavLogoSpan = styled.span`
   font-size: 20px;
   font-family: "handjet-regular";
-  margin: 0 10px 0 10px;
+  margin: 0 60px 0 60px;
   text-transform: uppercase;
   cursor: pointer;
   color: #000;

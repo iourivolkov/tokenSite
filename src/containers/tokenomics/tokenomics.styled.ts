@@ -8,6 +8,7 @@ import {
   lurryCoin6Animation,
   lurryCoin7Animation,
   lurryCoin8Animation,
+  lurryCoin9Animation,
   slideAnimation,
 } from "./tokenomics.anim";
 
@@ -17,11 +18,11 @@ export const LurryCoin1 = styled.img`
   position: absolute;
   z-index: 1;
   filter: blur(4px);
-  width: 200px;
-  height: 500px;
+  width: 157px;
+  height: 180px;
   opacity: 0.9;
   top: 20px;
-  right: 100px;
+  right: 450px;
   animation: ${lurryCoin1Animation} 8s ease-in-out infinite;
   border: 1px solid blue;
 `;
@@ -29,25 +30,25 @@ export const LurryCoin1 = styled.img`
 export const LurryCoin2 = styled.img`
   position: absolute;
   z-index: 1;
-  filter: blur(2px);
-  width: 200px;
-  height: 80px;
-  opacity: 0.7;
-  bottom: 100px;
-  right: 300px;
+  filter: blur(3px);
+  width: 340px;
+  height: 340px;
+  opacity: 1;
+  bottom: 200px;
+  right: 120px;
   animation: ${lurryCoin2Animation} 8s ease-in-out infinite;
-  border: 1px solid orange;
+  border: 3px solid orange;
 `;
 
 export const LurryCoin3 = styled.img`
   position: absolute;
   z-index: 1;
-  filter: blur(3px);
-  width: 120px;
-  height: 400px;
-  opacity: 1;
-  bottom: -200px;
-  left: 500px;
+  filter: blur(1px);
+  width: 350px;
+  height: 350px;
+  opacity: 0.98;
+  top: 200px;
+  right: 500px;
   animation: ${lurryCoin3Animation} 8s ease-in-out infinite;
   border: 1px solid green;
 `;
@@ -55,12 +56,12 @@ export const LurryCoin3 = styled.img`
 export const LurryCoin4 = styled.img`
   position: absolute;
   z-index: 1;
-  filter: blur(2px);
-  width: 200px;
-  height: 100px;
-  opacity: 0.8;
-  top: 500px;
-  left: 100px;
+  filter: blur(1.5px);
+  width: 228px;
+  height: 228px;
+  opacity: 1;
+  top: 300px;
+  left: 200px;
   animation: ${lurryCoin4Animation} 8s ease-in-out infinite;
   border: 1px solid red;
 `;
@@ -68,12 +69,12 @@ export const LurryCoin4 = styled.img`
 export const LurryCoin5 = styled.img`
   position: absolute;
   z-index: 1;
-  filter: blur(1px);
+  filter: blur(3px);
   width: 100px;
   height: 100px;
   opacity: 0.9;
-  bottom: 300px;
-  left: 600px;
+  bottom: 230px;
+  left: 180px;
   animation: ${lurryCoin5Animation} 8s ease-in-out infinite;
   border: 1px solid purple;
 `;
@@ -81,40 +82,53 @@ export const LurryCoin5 = styled.img`
 export const LurryCoin6 = styled.img`
   position: absolute;
   z-index: 2;
-  filter: blur(1px);
-  width: 100px;
-  height: 250px;
+  filter: blur(2.85px);
+  width: 150px;
+  height: 174px;
   opacity: 1;
-  top: 200px;
-  left: 600px;
-  animation: ${lurryCoin6Animation} 8s ease-in-out infinite;
+  top: 30px;
+  left: 500px;
+  animation: ${lurryCoin6Animation} 12s ease-in-out infinite;
   border: 1px solid yellow;
 `;
 
 export const LurryCoin7 = styled.img`
   position: absolute;
-  z-index: 1;
-  /* filter: blur(1px); */
-  width: 300px;
-  height: 790px;
+  z-index: 2;
+  width: 500px;
+  height: 600px;
   opacity: 1;
-  top: 290px;
-  right: 300px;
-  animation: ${lurryCoin7Animation} 8s ease-in-out infinite;
-  border: 1px solid black;
+  bottom: -200px;
+  left: 300px;
+  animation: ${lurryCoin7Animation} 5s ease-in-out infinite;
+  border: 2px solid black;
 `;
 
 export const LurryCoin8 = styled.img`
   position: absolute;
   z-index: 1;
-  /* filter: blur(6px); */
-  width: 250px;
-  height: 200px;
-  opacity: 0.7;
-  top: 200px;
-  left: -100px;
-  animation: ${lurryCoin8Animation} 8s ease-in-out infinite;
+  filter: blur(1px);
+  width: 160px;
+  height: 170px;
+  opacity: 0.9;
+  top: 120px;
+  left: 820px;
+  animation: ${lurryCoin8Animation} 13s ease-in-out infinite;
   border: 3px solid red;
+`;
+
+export const LurryCoin9 = styled.img`
+  position: absolute;
+  z-index: 1;
+  /* transform: rotate(-28.3deg);
+  filter: blur(0.5px); */
+  width: 313px;
+  height: 313px;
+  opacity: 0.95;
+  bottom: 10px;
+  right: 480px;
+  animation: ${lurryCoin9Animation} 8s ease-in-out infinite;
+  border: 3px solid teal;
 `;
 
 // STYLES
@@ -153,6 +167,17 @@ export const Text = styled.p`
   z-index: 10;
 `;
 
+export const ClickToCopy = styled.button`
+  font-family: "handjet-regular";
+  font-size: 48px;
+  color: #000;
+  margin-bottom: -10px;
+  z-index: 10;
+  border: none;
+  background: none;
+  cursor: pointer;
+`;
+
 export const BuyButton = styled.button`
   cursor: pointer;
   width: 240px;
@@ -167,11 +192,11 @@ export const BuyButton = styled.button`
   text-transform: uppercase;
   margin-top: 75px;
   z-index: 100000;
-  opacity: 0.8;
+  opacity: 0.9;
 
   &:hover {
     color: #fff;
-    transition: all ease-in 0.2s;
+    transition: all ease-in 0.1s;
   }
 `;
 

@@ -23,17 +23,16 @@ const FooterText = {
   FooterText: "Powered by LurryLabs",
 };
 
-// @TODO - complete footer component w/ gradient & assets
 // @TODO - add social link for telegram group
 
 export const FooterContainer = () => {
   return (
     <FooterPageContainer id="footer-page">
+      <FurryLurryQuote>wagmi?</FurryLurryQuote>
+      <YetiLurryQuote>no cap fr fr</YetiLurryQuote>
+      <IceLurryImage src="/assets/yetiLurry.png" />
+      <FurryLurryImage src="/assets/furryLurry.png" />
       <FooterPageTextContainer>
-        <FurryLurryQuote>wagmi?</FurryLurryQuote>
-        <YetiLurryQuote>no cap fr fr</YetiLurryQuote>
-        <IceLurryImage src="/assets/yetiLurry.png" />
-        <FurryLurryImage src="/assets/furryLurry.png" />
         <Heading>{FooterText.heading}</Heading>
         <Subheading>{FooterText.subheading}</Subheading>
         <SocialButtonContainer>

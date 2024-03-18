@@ -14,6 +14,7 @@ export const FooterPageContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
+  max-width: 100%;
   background-color: #ffffff;
   position: relative;
 `;
@@ -92,7 +93,7 @@ export const IceLurryImage = styled.img`
 export const FurryLurryImage = styled.img`
   position: absolute;
   height: 1000px;
-  bottom: -80px;
+  bottom: -200px;
   right: -500px;
   z-index: 2;
   transform: rotate(-34deg);
