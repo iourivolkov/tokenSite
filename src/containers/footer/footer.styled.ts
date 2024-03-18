@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const FooterPageTextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 50%;
+  margin-top: 40%;
   justify-content: center;
   align-items: center;
 `;
