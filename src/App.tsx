@@ -13,10 +13,10 @@ import { TokenomicsContainer } from "./containers/tokenomics/tokenomics.componen
 function App() {
   return (
     <>
-      <HeaderNav />
-      <LandingComponent />
-      <HeroContainer />
-      <TokenomicsContainer />
+      {/* <HeaderNav /> */}
+      {/* <LandingComponent /> */}
+      {/* <HeroContainer /> */}
+      {/* <TokenomicsContainer /> */}
       <FooterContainer />
     </>
   );
