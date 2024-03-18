@@ -28,7 +28,7 @@ export const lurryCoin2Animation = keyframes`
     transform: translateY(0) rotate(72deg) ;
   }
   50% {
-    transform: translateY(-20px) rotate(72deg);
+    transform: translateY(-5px) rotate(72deg);
   }
   100% {
     transform: translateY(0) rotate(72deg);
@@ -39,7 +39,7 @@ export const lurryCoin3Animation = keyframes`
     transform: translateY(0) rotate(20deg) ;
   }
   50% {
-    transform: translateY(-10px) rotate(20deg);
+    transform: translateY(-8px) rotate(20deg);
   }
   100% {
     transform: translateY(0) rotate(20deg);
@@ -83,7 +83,7 @@ export const lurryCoin7Animation = keyframes`
     transform: translateY(0) rotate(-50deg) ;
   }
   50% {
-    transform: translateY(-6px) rotate(-50deg);
+    transform: translateY(-10px) rotate(-50deg);
   }
   100% {
     transform: translateY(0) rotate(-50deg);
@@ -94,7 +94,7 @@ export const lurryCoin8Animation = keyframes`
     transform: translateY(0) rotate(46.5deg) ;
   }
   50% {
-    transform: translateY(-10px) rotate(46.5deg);
+    transform: translateY(-4px) rotate(46.5deg);
   }
   100% {
     transform: translateY(0) rotate(46.5deg);
