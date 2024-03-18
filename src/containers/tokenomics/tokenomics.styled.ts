@@ -39,8 +39,8 @@ export const LurryCoin2 = styled.img`
   opacity: 1;
   bottom: 200px;
   right: 120px;
-  /* transform: rotate(72deg); */
-  animation: ${lurryCoin2Animation} 20s ease-in-out infinite;
+  transform: rotate(72deg);
+  /* animation: ${lurryCoin2Animation} 20s ease-in-out infinite; */
   border: 3px solid orange;
 `;
 
@@ -101,11 +101,11 @@ export const LurryCoin6 = styled.img`
 
 export const LurryCoin7 = styled.img`
   position: absolute;
-  z-index: 2;
+  z-index: 9999999;
   width: 500px;
   height: 600px;
   opacity: 1;
-  bottom: -200px;
+  bottom: -180px;
   left: 300px;
   animation: ${lurryCoin7Animation} 6s ease-in-out infinite;
   border: 2px solid black;
