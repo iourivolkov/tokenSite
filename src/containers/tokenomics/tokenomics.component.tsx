@@ -29,7 +29,7 @@ const LurrynomicsText = {
   supplyPrompt: "Supply:",
   supply: "1,000,000,000",
   liquidityPrompt: "Liquidity:",
-  liquidity: "50%",
+  liquidity: "90%, burned",
   teamPrompt: "Team:",
   team: "6%",
   marketingPrompt: "Marketing:",

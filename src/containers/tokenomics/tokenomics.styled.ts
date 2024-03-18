@@ -192,11 +192,11 @@ export const BuyButton = styled.button`
   text-transform: uppercase;
   margin-top: 75px;
   z-index: 100000;
-  opacity: 0.8;
+  opacity: 0.9;
 
   &:hover {
     color: #fff;
-    transition: all ease-in 0.2s;
+    transition: all ease-in 0.1s;
   }
 `;
 
