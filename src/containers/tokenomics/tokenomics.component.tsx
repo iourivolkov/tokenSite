@@ -46,11 +46,11 @@ const LurrynomicsText = {
 // @TODO - add correct dex link once contract is live
 
 export const TokenomicsContainer = () => {
-  const [showCopiedModal, setShowCopiedModal] = useState(false);
+  const [copied, setCopied] = useState(false);
 
-  function handleCopy() {
-    setShowCopiedModal(true);
-    setTimeout(() => setShowCopiedModal(false), 1500);
+  async function handleCopy() {
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1500);
   }
 
   function handleBuy() {
@@ -68,13 +68,18 @@ export const TokenomicsContainer = () => {
       <LurryCoin7 src="/assets/3dCoin2.png" />
       <LurryCoin8 src="/assets/3dCoin6.png" />
       <LurryCoin9 src="/assets/3dCoin9.png" />
+
       {/* <LurryImage src="/assets/lurryCoin.png" /> */}
+
       <Heading>{LurrynomicsText.heading}</Heading>
+
       <Subheading>{LurrynomicsText.subheading}</Subheading>
+
       <TokenomicsTextContainer>
         <Text>{LurrynomicsText.supplyPrompt}</Text>
         <Text>{LurrynomicsText.supply}</Text>
       </TokenomicsTextContainer>
+
       <TokenomicsTextContainer>
         <Text>{LurrynomicsText.liquidityPrompt}</Text>
         <Text>{LurrynomicsText.liquidity}</Text>
@@ -99,9 +104,11 @@ export const TokenomicsContainer = () => {
         <Text>{LurrynomicsText.contractPrompt}</Text>
         <CopyToClipboard
           text="https://dexscreener.com/solana/432xjvh7zqh85f669hr7ofegkd5cbzd4m3jn41uztc2d"
-          onCopy={(text, result) => console.log(result)}
+          onCopy={handleCopy}
         >
-          <ClickToCopy>{LurrynomicsText.contract}</ClickToCopy>
+          <ClickToCopy>
+            {copied ? "copied" : LurrynomicsText.contract}
+          </ClickToCopy>
         </CopyToClipboard>
       </TokenomicsTextContainer>
       <TokenomicsTextContainer>

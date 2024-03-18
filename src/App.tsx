@@ -16,7 +16,7 @@ function App() {
       {/* <HeaderNav /> */}
       {/* <LandingComponent /> */}
       {/* <HeroContainer /> */}
-      {/* <TokenomicsContainer /> */}
+      <TokenomicsContainer />
       <FooterContainer />
     </>
   );

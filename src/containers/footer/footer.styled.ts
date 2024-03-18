@@ -1,14 +1,17 @@
 import styled from "styled-components";
 import { device } from "../../constants/breakpoints";
+import { SectionTitle } from "../../components/section-title/section-title.component";
 
 export const FooterPageContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   /* min-height: 100dvh; */
   position: relative;
   overflow: hidden;
+  margin-top: 200px;
+  padding-bottom: 100px;
 `;
 
 export const FooterQuotesContainer = styled.div`
@@ -33,18 +36,8 @@ export const YetiLurryQuote = styled.p`
   transform: rotate(-30deg);
 `;
 
-export const Heading = styled.h1`
-  color: #000;
-  font-family: "handjet-bold";
-  font-size: 200px;
+export const Heading = styled(SectionTitle)`
   margin-top: 70px;
-  @media ${device.md} {
-    font-size: 150px;
-  }
-
-  @media ${device.sm} {
-    font-size: 80px;
-  }
 `;
 
 export const Subheading = styled.p`

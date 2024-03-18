@@ -1,3 +1,4 @@
+import { SectionTitle } from "../../components/section-title/section-title.component";
 import {
   Heading,
   Subheading,

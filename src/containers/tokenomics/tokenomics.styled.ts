@@ -9,14 +9,86 @@ import {
   lurryCoin7Animation,
   lurryCoin8Animation,
   lurryCoin9Animation,
-  slideAnimation,
+  // slideAnimation,
 } from "./tokenomics.anim";
+import { SectionTitle } from "../../components/section-title/section-title.component";
+import { device } from "../../constants/breakpoints";
+
+export const TokenomicsPageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  @media ${device.md} {
+    overflow: hidden;
+  }
+`;
+
+export const Heading = styled(SectionTitle)`
+  /* margin-top: -15px; */
+`;
+
+export const Subheading = styled.p`
+  font-family: "handjet-regular";
+  font-size: 20px;
+  color: #000;
+  /* z-index: 10; */
+`;
+
+export const TokenomicsTextContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  max-width: 500px;
+
+  @media ${device.md} {
+    width: 80%;
+  }
+  @media ${device.sm} {
+    max-width: 300px;
+  }
+`;
+
+export const Text = styled.p`
+  font-family: "handjet-regular";
+  font-size: 48px;
+  color: #000;
+
+  @media ${device.md} {
+    font-size: 40px;
+  }
+
+  @media ${device.sm} {
+    font-size: 30px;
+  }
+  /* margin-bottom: -10px; */
+  /* z-index: 10; */
+`;
+
+export const ClickToCopy = styled.button`
+  font-family: "handjet-regular";
+  font-size: 48px;
+  color: #000;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  @media ${device.md} {
+    font-size: 40px;
+  }
+
+  @media ${device.sm} {
+    font-size: 30px;
+  }
+`;
 
 // ANIMATED COINS
-
 export const LurryCoin1 = styled.img`
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   filter: blur(4px);
   width: 157px;
   height: 180px;
@@ -24,12 +96,12 @@ export const LurryCoin1 = styled.img`
   top: 20px;
   right: 450px;
   animation: ${lurryCoin1Animation} 8s ease-in-out infinite;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 `;
 
 export const LurryCoin2 = styled.img`
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   filter: blur(3px);
   width: 340px;
   height: 340px;
@@ -37,12 +109,12 @@ export const LurryCoin2 = styled.img`
   bottom: 200px;
   right: 120px;
   animation: ${lurryCoin2Animation} 8s ease-in-out infinite;
-  border: 3px solid orange;
+  /* border: 3px solid orange; */
 `;
 
 export const LurryCoin3 = styled.img`
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   filter: blur(1px);
   width: 350px;
   height: 350px;
@@ -50,12 +122,12 @@ export const LurryCoin3 = styled.img`
   top: 200px;
   right: 500px;
   animation: ${lurryCoin3Animation} 8s ease-in-out infinite;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 `;
 
 export const LurryCoin4 = styled.img`
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   filter: blur(1.5px);
   width: 228px;
   height: 228px;
@@ -63,12 +135,12 @@ export const LurryCoin4 = styled.img`
   top: 300px;
   left: 200px;
   animation: ${lurryCoin4Animation} 8s ease-in-out infinite;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 `;
 
 export const LurryCoin5 = styled.img`
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   filter: blur(3px);
   width: 100px;
   height: 100px;
@@ -76,12 +148,12 @@ export const LurryCoin5 = styled.img`
   bottom: 230px;
   left: 180px;
   animation: ${lurryCoin5Animation} 8s ease-in-out infinite;
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
 `;
 
 export const LurryCoin6 = styled.img`
   position: absolute;
-  z-index: 2;
+  z-index: -2;
   filter: blur(2.85px);
   width: 150px;
   height: 174px;
@@ -89,24 +161,24 @@ export const LurryCoin6 = styled.img`
   top: 30px;
   left: 500px;
   animation: ${lurryCoin6Animation} 12s ease-in-out infinite;
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
 `;
 
 export const LurryCoin7 = styled.img`
   position: absolute;
-  z-index: 2;
+  z-index: -1;
   width: 500px;
   height: 600px;
   opacity: 1;
   bottom: -200px;
   left: 300px;
   animation: ${lurryCoin7Animation} 5s ease-in-out infinite;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 `;
 
 export const LurryCoin8 = styled.img`
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   filter: blur(1px);
   width: 160px;
   height: 170px;
@@ -114,12 +186,12 @@ export const LurryCoin8 = styled.img`
   top: 120px;
   left: 820px;
   animation: ${lurryCoin8Animation} 13s ease-in-out infinite;
-  border: 3px solid red;
+  /* border: 3px solid red; */
 `;
 
 export const LurryCoin9 = styled.img`
   position: absolute;
-  z-index: 1;
+  z-index: -2;
   /* transform: rotate(-28.3deg);
   filter: blur(0.5px); */
   width: 313px;
@@ -128,54 +200,7 @@ export const LurryCoin9 = styled.img`
   bottom: 10px;
   right: 480px;
   animation: ${lurryCoin9Animation} 8s ease-in-out infinite;
-  border: 3px solid teal;
-`;
-
-// STYLES
-
-export const TokenomicsPageContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  background-color: #ffffff;
-`;
-
-export const Heading = styled.h1`
-  font-family: "handjet-bold";
-  font-size: 200px;
-  color: #000;
-  margin-bottom: -15px;
-  z-index: 10;
-`;
-
-export const Subheading = styled.p`
-  font-family: "handjet-regular";
-  font-size: 20px;
-  color: #000;
-  z-index: 10;
-`;
-
-export const Text = styled.p`
-  font-family: "handjet-regular";
-  font-size: 48px;
-  color: #000;
-  margin-bottom: -10px;
-  z-index: 10;
-`;
-
-export const ClickToCopy = styled.button`
-  font-family: "handjet-regular";
-  font-size: 48px;
-  color: #000;
-  margin-bottom: -10px;
-  z-index: 10;
-  border: none;
-  background: none;
-  cursor: pointer;
+  /* border: 3px solid teal; */
 `;
 
 export const BuyButton = styled.button`
@@ -191,7 +216,7 @@ export const BuyButton = styled.button`
   font-size: 24px;
   text-transform: uppercase;
   margin-top: 75px;
-  z-index: 100000;
+  /* z-index: 100000; */
   opacity: 0.9;
 
   &:hover {
@@ -200,17 +225,10 @@ export const BuyButton = styled.button`
   }
 `;
 
-export const LurryImage = styled.img`
-  position: absolute;
-  height: 900px;
-  right: -400px;
-  transform: rotate(-90deg);
-  animation: ${slideAnimation} 15s linear infinite;
-`;
-
-export const TokenomicsTextContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 30%;
-`;
+// export const LurryImage = styled.img`
+//   position: absolute;
+//   height: 900px;
+//   right: -400px;
+//   transform: rotate(-90deg);
+//   animation: ${slideAnimation} 15s linear infinite;
+// `;
