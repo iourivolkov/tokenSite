@@ -1,48 +1,69 @@
 import styled from "styled-components";
-
-export const FooterPageTextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-top: 50%;
-  justify-content: center;
-  align-items: center;
-`;
+import { device } from "../../constants/breakpoints";
 
 export const FooterPageContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  max-width: 100%;
-  background-color: #ffffff;
+  /* min-height: 100dvh; */
   position: relative;
+  overflow: hidden;
+`;
+
+export const FooterQuotesContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30%;
+  height: 100px;
+  width: 100%;
+  max-width: 1024px;
+`;
+
+export const FurryLurryQuote = styled.p`
+  font-family: "handjet-regular";
+  font-size: 28px;
+  transform: rotate(30deg);
+`;
+
+export const YetiLurryQuote = styled.p`
+  font-family: "handjet-regular";
+  font-size: 40px;
+  transform: rotate(-30deg);
 `;
 
 export const Heading = styled.h1`
   color: #000;
   font-family: "handjet-bold";
   font-size: 200px;
-  margin-top: -300px;
-  margin-bottom: -15px;
-  z-index: 10;
+  margin-top: 70px;
+  @media ${device.md} {
+    font-size: 150px;
+  }
+
+  @media ${device.sm} {
+    font-size: 80px;
+  }
 `;
 
 export const Subheading = styled.p`
+  text-align: center;
   font-family: "handjet-regular";
   font-size: 20px;
   margin-top: 20px;
   color: #000;
-  z-index: 10;
+
+  @media ${device.xs} {
+    width: 80%;
+  }
 `;
 
 export const SocialButtonContainer = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 2rem;
   margin-top: 20px;
-  z-index: 10;
 `;
 
 export const SocialButton = styled.button`
@@ -62,57 +83,42 @@ export const SocialButton = styled.button`
   }
 `;
 
-export const FooterSea = styled.div`
-  background: linear-gradient(rgb(86, 84, 233), rgb(23, 23, 142));
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 200px;
-  z-index: 2;
-`;
-
-export const FooterText2 = styled.p`
-  font-family: "handjet-regular";
-  color: #000;
-  font-size: 20px;
-  position: absolute;
-  bottom: 10px;
-  left: 20px;
-  opacity: 0.5;
-`;
-
 export const IceLurryImage = styled.img`
   position: absolute;
-  height: 1000px;
-  bottom: -80px;
-  left: -500px;
-  z-index: 2;
-  transform: rotate(30deg) scaleX(-1);
+  transform: rotate(40deg);
+  width: 800px;
+  left: -300px;
+  z-index: -1;
+
+  @media ${device.md} {
+  }
+
+  @media ${device.sm} {
+    width: 700px;
+    left: -280px;
+  }
+
+  @media ${device.xs} {
+    left: -150px;
+  }
 `;
 
 export const FurryLurryImage = styled.img`
   position: absolute;
-  height: 1000px;
-  bottom: -200px;
-  right: -500px;
-  z-index: 2;
   transform: rotate(-34deg);
-`;
+  width: 800px;
+  right: -350px;
+  z-index: -1;
 
-export const FurryLurryQuote = styled.p`
-  font-family: "handjet-regular";
-  font-size: 28px;
-  top: 300px;
-  left: 250px;
-  transform: rotate(30deg);
-  position: absolute;
-`;
+  @media ${device.md} {
+  }
 
-export const YetiLurryQuote = styled.p`
-  font-family: "handjet-regular";
-  font-size: 40px;
-  top: 250px;
-  right: 250px;
-  transform: rotate(-30deg);
-  position: absolute;
+  @media ${device.sm} {
+    width: 700px;
+    right: -350px;
+  }
+
+  @media ${device.xs} {
+    right: -200px;
+  }
 `;

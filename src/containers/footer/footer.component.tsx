@@ -4,15 +4,11 @@ import {
   FooterPageContainer,
   SocialButton,
   SocialButtonContainer,
-  //   FooterSea,
-  //   OgLurry,
-  //   OgLurrySmol1,
-  //   FooterText2,
-  FooterPageTextContainer,
   IceLurryImage,
   FurryLurryImage,
   FurryLurryQuote,
   YetiLurryQuote,
+  FooterQuotesContainer,
 } from "./footer.styled";
 
 const FooterText = {
@@ -28,22 +24,25 @@ const FooterText = {
 export const FooterContainer = () => {
   return (
     <FooterPageContainer id="footer-page">
-      <FurryLurryQuote>wagmi?</FurryLurryQuote>
-      <YetiLurryQuote>no cap fr fr</YetiLurryQuote>
+      <FooterQuotesContainer>
+        <FurryLurryQuote>wagmi?</FurryLurryQuote>
+        <YetiLurryQuote>no cap fr fr</YetiLurryQuote>
+      </FooterQuotesContainer>
+
       <IceLurryImage src="/assets/yetiLurry.png" />
       <FurryLurryImage src="/assets/furryLurry.png" />
-      <FooterPageTextContainer>
-        <Heading>{FooterText.heading}</Heading>
-        <Subheading>{FooterText.subheading}</Subheading>
-        <SocialButtonContainer>
-          <a target="_blank" href="https://twitter.com/lurrytheduck">
-            <SocialButton>{FooterText.xButton}</SocialButton>
-          </a>
-          <a target="_blank" href="">
-            <SocialButton>{FooterText.tgButton}</SocialButton>
-          </a>
-        </SocialButtonContainer>
-      </FooterPageTextContainer>
+
+      <Heading>{FooterText.heading}</Heading>
+      <Subheading>{FooterText.subheading}</Subheading>
+
+      <SocialButtonContainer>
+        <a target="_blank" href="https://twitter.com/lurrytheduck">
+          <SocialButton>{FooterText.xButton}</SocialButton>
+        </a>
+        <a target="_blank" href="">
+          <SocialButton>{FooterText.tgButton}</SocialButton>
+        </a>
+      </SocialButtonContainer>
     </FooterPageContainer>
   );
 };
