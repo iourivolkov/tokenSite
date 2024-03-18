@@ -10,7 +10,7 @@ export const FooterPageContainer = styled.div`
   /* min-height: 100dvh; */
   position: relative;
   overflow: hidden;
-  margin-top: 200px;
+  margin-top: 100px;
   padding-bottom: 100px;
 `;
 
