@@ -184,6 +184,11 @@ export const LurryCoin7 = styled.img`
   left: 300px;
   animation: ${lurryCoin7Animation} 6s ease-in-out infinite;
   border: 2px solid black;
+
+  @media ${device.md} {
+    overflow: hidden;
+    bottom: -50px;
+  }
 `;
 
 export const LurryCoin8 = styled.img`

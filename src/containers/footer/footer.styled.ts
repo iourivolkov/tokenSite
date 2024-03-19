@@ -5,9 +5,8 @@ import { SectionTitle } from "../../components/section-title/section-title.compo
 export const FooterPageContainer = styled.div`
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
-  /* min-height: 100dvh; */
   position: relative;
   overflow: hidden;
   margin-top: 100px;
@@ -78,9 +77,9 @@ export const SocialButton = styled.button`
 
 export const IceLurryImage = styled.img`
   position: absolute;
-  transform: rotate(40deg);
+  transform: rotate(40deg) scaleX(-1);
   width: 800px;
-  left: -300px;
+  left: -350px;
   z-index: -1;
 
   @media ${device.md} {
@@ -88,11 +87,11 @@ export const IceLurryImage = styled.img`
 
   @media ${device.sm} {
     width: 700px;
-    left: -280px;
+    left: -300px;
   }
 
   @media ${device.xs} {
-    left: -150px;
+    left: -200px;
   }
 `;
 
@@ -100,7 +99,7 @@ export const FurryLurryImage = styled.img`
   position: absolute;
   transform: rotate(-34deg);
   width: 800px;
-  right: -350px;
+  right: -380px;
   z-index: -1;
 
   @media ${device.md} {
@@ -108,7 +107,7 @@ export const FurryLurryImage = styled.img`
 
   @media ${device.sm} {
     width: 700px;
-    right: -350px;
+    right: -300px;
   }
 
   @media ${device.xs} {
