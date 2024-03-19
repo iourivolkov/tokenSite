@@ -140,8 +140,8 @@ export const LurryCoin2 = styled.img`
   @media ${device.sm} {
     bottom: 300px;
     left: -50px;
-    height: 250px;
-    width: 250px;
+    height: 270px;
+    width: 270px;
     animation: ${lurryCoin2AnimationMobile} 11s ease-in-out infinite;
   }
 `;
@@ -222,9 +222,9 @@ export const LurryCoin5 = styled.img`
   @media ${device.sm} {
     height: 130px;
     width: 130px;
-    transform: rotate(75deg);
+    transform: rotate(-50deg);
     filter: blur(1.5px);
-    animation: ${lurryCoin5AnimationMobile} 10s ease-in-out infinite;
+    /* animation: ${lurryCoin5AnimationMobile} 10s ease-in-out infinite; */
   }
 `;
 

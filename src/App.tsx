@@ -3,14 +3,16 @@ import { FooterContainer } from "./containers/footer/footer.component";
 import { HeroContainer } from "./containers/hero/hero.component";
 import { LandingComponent } from "./containers/landing/landing.component";
 import { TokenomicsContainer } from "./containers/tokenomics/tokenomics.component";
+import MobileNav from "./components/mobile-nav/mobile-nav.component";
 
-// @TODO - landing page -> add up/down /side to side animations for sun and clouds -> stop animations once user scrolls -> do parallax effect
-// @TODO - custom cursor -> crayon? *optional*
-// @TODO - community page -> adjust asset positions + create "dialogue" b/w lurries *optional*
+// @TODO - check if screen size is = mobile, if yes -> display mobile nav
+
+// @TODO - if screen size !== mobile (tablet or desktop) -> display header nav
 
 function App() {
   return (
     <>
+      <MobileNav />
       <HeaderNav />
       <LandingComponent />
       <HeroContainer />

@@ -27,12 +27,32 @@ export const FurryLurryQuote = styled.p`
   font-family: "handjet-regular";
   font-size: 28px;
   transform: rotate(30deg);
+
+  @media ${device.md} {
+  }
+
+  @media ${device.xs} {
+    font-size: 20px;
+    position: absolute;
+    bottom: 400px;
+    left: 50px;
+  }
 `;
 
 export const YetiLurryQuote = styled.p`
   font-family: "handjet-regular";
   font-size: 40px;
   transform: rotate(-30deg);
+
+  @media ${device.md} {
+  }
+
+  @media ${device.xs} {
+    position: absolute;
+    font-size: 30px;
+    bottom: 400px;
+    right: 30px;
+  }
 `;
 
 export const Heading = styled(SectionTitle)`
