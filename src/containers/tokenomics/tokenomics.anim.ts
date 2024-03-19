@@ -25,10 +25,22 @@ export const lurryCoin1Animation = keyframes`
 `;
 export const lurryCoin2Animation = keyframes`
   0% {
+    transform: translateY(0) rotate(25deg) ;
+  }
+  50% {
+    transform: translateY(-5px) rotate(25deg);
+  }
+  100% {
+    transform: translateY(0) rotate(25deg);
+  }
+`;
+
+export const lurryCoin2AnimationMobile = keyframes`
+  0% {
     transform: translateY(0) rotate(72deg) ;
   }
   50% {
-    transform: translateY(-5px) rotate(72deg);
+    transform: translateY(-4px) rotate(65deg);
   }
   100% {
     transform: translateY(0) rotate(72deg);
@@ -67,6 +79,19 @@ export const lurryCoin5Animation = keyframes`
     transform: translateY(0) rotate(30deg);
   }
 `;
+
+export const lurryCoin5AnimationMobile = keyframes`
+  0% {
+    transform: translateY(0) rotate(-50deg) ;
+  }
+  50% {
+    transform: translateY(-20px) rotate(-50deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-50deg);
+  }
+`;
+
 export const lurryCoin6Animation = keyframes`
   0% {
     transform: translateY(0) rotate(70deg) ;
