@@ -4,7 +4,7 @@ import {
   NavItemSpan,
   NavLogoSpan,
 } from "./header-nav.styled";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import { useEffect, useState } from "react";
 
 export const HeaderNav = () => {
