@@ -19,8 +19,13 @@ export const LorePageContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
-  padding-bottom: 100px;
+  padding-block: 200px;
+
+  @media ${device.md} {
+    padding-top: 0px;
+  }
 `;
 
 export const Heading = styled(SectionTitle)``;

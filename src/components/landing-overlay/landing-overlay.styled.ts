@@ -1,10 +1,11 @@
 import styled, { css } from "styled-components";
+import { device } from "../../constants/breakpoints";
 
 export const OverlayContainer = styled.div<{ fadeOut: boolean }>`
   background: #ffcd00;
-  opacity: 1;
-  height: 100vh;
+  height: 100dvh;
   width: 100%;
+  opacity: 1;
   position: fixed;
   top: 0;
   left: 0;
@@ -31,6 +32,14 @@ export const OverlayHeading = styled.button`
 
   &:hover {
     color: #fff;
+  }
+
+  @media ${device.sm} {
+    font-size: 150px;
+  }
+
+  @media ${device.xs} {
+    font-size: 100px;
   }
 `;
 
