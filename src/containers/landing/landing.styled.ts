@@ -14,7 +14,12 @@ export const CloudsAndSunDiv = styled.div`
   position: relative;
   overflow: hidden;
   height: 100%;
+  padding-top: 100px;
   align-items: center;
+
+  @media ${device.xs} {
+    padding-top: 0px;
+  }
 `;
 
 export const LeftCloud = styled.img`
@@ -33,7 +38,7 @@ export const RightCloud = styled.img`
   width: clamp(10rem, 30vw, 50rem);
   width: 50%;
   z-index: 3;
-  margin-left: -100px;
+  margin-left: 0px;
 
   @media ${device.md} {
     margin-left: 0px;
@@ -47,21 +52,29 @@ export const RightCloud = styled.img`
 export const LurrySun = styled.img`
   position: absolute;
   width: 800px;
-  left: -3%;
-  top: 0%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
+  margin-top: -100px;
 
   @media ${device.md} {
-    left: 0%;
+    /* left: 50%;
+    */
+    /* top: 50%; */
+    /* transform: translate(-50%, -50%); */
   }
 
   @media ${device.sm} {
-    left: -10%;
-    top: 5%;
+    /* left: 50%; */
+    /* top: 50%; */
+    /* transform: translate(-50%, -50%); */
   }
 
   @media ${device.xs} {
-    left: -10%;
-    top: 13%;
+    /* left: 50%;
+    */
+    /* top: 50%; */
+    /* transform: translate(-50%, -50%); */
   }
 `;

@@ -25,7 +25,7 @@ export const LandingComponent = () => {
       if (leftCloud && rightCloud && sun) {
         leftCloud.style.transform = `translateX(-${scrollY * 0.8}px)`;
         rightCloud.style.transform = `translateX(${scrollY * 0.4}px)`;
-        sun.style.transform = `translateY(-${scrollY * 0.4}px)`;
+        sun.style.transform = `translate(-50%, calc(-50% + -${scrollY * 0.5}px)`;
       }
     };
 
