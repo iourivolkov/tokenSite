@@ -1,17 +1,30 @@
-import {
-  MobileNavContainer,
-  MobileNavMenuItem,
-  MobileNavOpen,
-  MobileNavClose,
-} from "./mobile-nav.styled";
+import { MobileNavContainer, MobileNavMenuItem } from "./mobile-nav.styled";
 import { Link } from "react-scroll";
+import { useEffect } from "react";
 
-// @TODO - close mobile nav when nav item is clicked
+const MobileNav = ({ setIsMobileNavOpen, isMobileNavOpen }: any) => {
+  useEffect(() => {
+    const handleBodyOverflow = () => {
+      if (isMobileNavOpen) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "auto";
+      }
+    };
 
-const MobileNav = () => {
+    handleBodyOverflow();
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isMobileNavOpen]);
+
+  function closeMobileNav() {
+    setIsMobileNavOpen(false);
+  }
+
   return (
     <MobileNavContainer>
-      <MobileNavClose></MobileNavClose>
       <MobileNavMenuItem>
         <Link
           activeClass="active"
@@ -19,6 +32,7 @@ const MobileNav = () => {
           smooth={true}
           duration={100}
           to="hero-page"
+          onClick={closeMobileNav}
         >
           about
         </Link>
@@ -30,6 +44,7 @@ const MobileNav = () => {
           smooth={true}
           duration={100}
           to="tokenomics-page"
+          onClick={closeMobileNav}
         >
           tokenomics
         </Link>
@@ -41,6 +56,7 @@ const MobileNav = () => {
           smooth={true}
           duration={100}
           to="footer-page"
+          onClick={closeMobileNav}
         >
           community
         </Link>

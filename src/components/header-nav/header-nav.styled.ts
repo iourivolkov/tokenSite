@@ -1,14 +1,20 @@
 import styled, { css } from "styled-components";
 import { device } from "../../constants/breakpoints";
 
-export const Navigation = styled.ul<{ isHidden: boolean }>`
+export const Navigation = styled.ul<{
+  isHidden: boolean;
+  isScrolling: boolean;
+  isMobileNavOpen: boolean;
+}>`
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  background: ${({ isScrolling, isMobileNavOpen }) =>
+    isScrolling && !isMobileNavOpen ? "rgba(255,255,255,0.9)" : "none"};
   top: 0px;
   width: 100%;
-  z-index: 1000;
+  z-index: 102;
   transition: transform 0.6s ease-in-out;
   padding: 40px 60px;
 
@@ -19,7 +25,7 @@ export const Navigation = styled.ul<{ isHidden: boolean }>`
     `}
 
   @media ${device.sm} {
-    padding: 30px 20px;
+    padding: 40px 60px;
   }
 `;
 
@@ -46,4 +52,5 @@ export const NavLogoSpan = styled.span`
   text-transform: uppercase;
   cursor: pointer;
   color: #000;
+  z-index: 101;
 `;

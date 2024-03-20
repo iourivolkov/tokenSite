@@ -3,7 +3,6 @@ import { FooterContainer } from "./containers/footer/footer.component";
 import { HeroContainer } from "./containers/hero/hero.component";
 import { LandingComponent } from "./containers/landing/landing.component";
 import { TokenomicsContainer } from "./containers/tokenomics/tokenomics.component";
-import MobileNav from "./components/mobile-nav/mobile-nav.component";
 
 // @TODO - check if screen size is = mobile, if yes -> display mobile nav
 
@@ -12,7 +11,6 @@ import MobileNav from "./components/mobile-nav/mobile-nav.component";
 function App() {
   return (
     <>
-      <MobileNav />
       <HeaderNav />
       <LandingComponent />
       <HeroContainer />

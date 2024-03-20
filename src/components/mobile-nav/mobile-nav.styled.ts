@@ -1,10 +1,8 @@
 import styled from "styled-components";
 
-// @TODO - prevent bg scroll when mobile nav is open
-
 export const MobileNavContainer = styled.div`
   position: fixed;
-  z-index: 100;
+  z-index: 101;
   background: #ffcd00;
   display: flex;
   flex-direction: column;
@@ -15,6 +13,11 @@ export const MobileNavContainer = styled.div`
   height: 100vh;
 `;
 
+export const MobileHeaderContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
 export const MobileNavMenuItem = styled.button`
   font-family: "handjet-semiBold";
   font-size: 80px;
@@ -22,13 +25,31 @@ export const MobileNavMenuItem = styled.button`
   background: none;
   cursor: pointer;
   text-transform: uppercase;
-  margin: -20px 0 -20px 0;
+  margin: -20px 0;
+  color: #000;
 
   &:hover {
     color: #fff;
   }
 `;
 
-export const MobileNavOpen = styled.img``;
+export const MobileNavOpen = styled.button`
+  background: none;
+  border: none;
+  font-family: "handjet-regular";
+  font-size: 20px;
+  color: #000;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: -1;
+`;
 
-export const MobileNavClose = styled.img``;
+export const MobileNavClose = styled.button`
+  background: none;
+  border: none;
+  font-family: "handjet-regular";
+  font-size: 20px;
+  color: #000;
+  text-transform: uppercase;
+  cursor: pointer;
+`;
