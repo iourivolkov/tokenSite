@@ -18,6 +18,10 @@ import {
 } from "./tokenomics.styled";
 import { useState } from "react";
 
+import useSound from "use-sound";
+import moneySound from "../../assets/sounds/cashSound.mp3";
+import clickSound from "../../assets/sounds/clickSound.mp3";
+
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const LurrynomicsText = {
@@ -45,12 +49,17 @@ const LurrynomicsText = {
 export const TokenomicsContainer = () => {
   const [copied, setCopied] = useState(false);
 
+  const [playClick] = useSound(clickSound);
+  const [playMoney] = useSound(moneySound);
+
   async function handleCopy() {
+    playClick();
     setCopied(true);
     setTimeout(() => setCopied(false), 1500);
   }
 
   function handleBuy() {
+    playMoney();
     console.log("redirect to dextools");
   }
 
@@ -65,8 +74,6 @@ export const TokenomicsContainer = () => {
       <LurryCoin7 src="/assets/3dCoin2.png" />
       <LurryCoin8 src="/assets/3dCoin6.png" />
       <LurryCoin9 src="/assets/3dCoin9.png" />
-
-      {/* <LurryImage src="/assets/lurryCoin.png" /> */}
 
       <Heading>{LurrynomicsText.heading}</Heading>
 
