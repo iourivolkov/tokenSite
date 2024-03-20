@@ -4,10 +4,6 @@ import { HeroContainer } from "./containers/hero/hero.component";
 import { LandingComponent } from "./containers/landing/landing.component";
 import { TokenomicsContainer } from "./containers/tokenomics/tokenomics.component";
 
-// @TODO - check if screen size is = mobile, if yes -> display mobile nav
-
-// @TODO - if screen size !== mobile (tablet or desktop) -> display header nav
-
 function App() {
   return (
     <>
