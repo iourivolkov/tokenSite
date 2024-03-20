@@ -40,7 +40,7 @@ export const FooterContainer = () => {
         <a target="_blank" href="https://twitter.com/lurrytheduck">
           <SocialButton>{FooterText.xButton}</SocialButton>
         </a>
-        <a target="_blank" href="">
+        <a target="_blank" href="https://t.me/lurrylabs">
           <SocialButton>{FooterText.tgButton}</SocialButton>
         </a>
       </SocialButtonContainer>
