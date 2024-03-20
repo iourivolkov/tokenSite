@@ -37,13 +37,13 @@ export const lurryCoin2Animation = keyframes`
 
 export const lurryCoin2AnimationMobile = keyframes`
   0% {
-    transform: translateY(0) rotate(72deg) ;
+    transform: translateY(0) rotate(33deg) ;
   }
   50% {
-    transform: translateY(-4px) rotate(65deg);
+    transform: translateY(-4px) rotate(33deg);
   }
   100% {
-    transform: translateY(0) rotate(72deg);
+    transform: translateY(0) rotate(33deg);
   }
 `;
 export const lurryCoin3Animation = keyframes`

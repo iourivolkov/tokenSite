@@ -116,9 +116,9 @@ export const LurryCoin1 = styled.img`
   @media ${device.sm} {
     width: 120px;
     height: 120px;
-    top: 80px;
-    right: -30px;
-    transform: rotate(50deg);
+    top: 10px;
+    right: 200px;
+    transform: rotate(10deg);
     filter: blur(3px);
   }
 `;
@@ -200,8 +200,8 @@ export const LurryCoin4 = styled.img`
   @media ${device.sm} {
     top: 100px;
     left: 200px;
-    height: 120px;
-    width: 120px;
+    height: 240px;
+    width: 240px;
     filter: blur(4px);
   }
 `;
@@ -230,8 +230,10 @@ export const LurryCoin5 = styled.img`
   @media ${device.sm} {
     height: 130px;
     width: 130px;
+    bottom: 180px;
+    left: 120px;
     transform: rotate(-50deg);
-    filter: blur(1.5px);
+    filter: blur(3px);
     /* animation: ${lurryCoin5AnimationMobile} 10s ease-in-out infinite; */
   }
 `;
