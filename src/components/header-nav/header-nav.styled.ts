@@ -10,8 +10,8 @@ export const Navigation = styled.ul<{
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  background: ${({ isScrolling, isMobileNavOpen }) =>
-    isScrolling && !isMobileNavOpen ? "rgba(255,255,255,0.9)" : "none"};
+  /* background: ${({ isScrolling, isMobileNavOpen }) =>
+    isScrolling && !isMobileNavOpen ? "rgba(255,255,255,0.4)" : "none"}; */
   top: 0px;
   width: 100%;
   z-index: 102;
