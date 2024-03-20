@@ -19,7 +19,7 @@ import {
 import { useState } from "react";
 
 import useSound from "use-sound";
-import moneySound from "../../assets/sounds/cashSound.mp3";
+import moneySound from "../../assets/sounds/moneyTrimmed.mp3";
 import clickSound from "../../assets/sounds/clickSound.mp3";
 
 import { CopyToClipboard } from "react-copy-to-clipboard";
@@ -44,7 +44,8 @@ const LurrynomicsText = {
   button: "buy $lurry",
 };
 
-// @TODO - add correct dex link once contract is live
+// @TODO - add correct dex link once contract is live!!
+// @TODO - add contract to "click to copy button" once live!!
 
 export const TokenomicsContainer = () => {
   const [copied, setCopied] = useState(false);

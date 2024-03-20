@@ -7,7 +7,7 @@ import {
 import { useState, useEffect } from "react";
 
 import useSound from "use-sound";
-import quack from "../../assets/sounds/duckQuack.mp3";
+import quack from "../../assets/sounds/quackTrimmed.mp3";
 
 const LandingOverlay = () => {
   const [isOverlayOpen, setIsOverlayOpen] = useState(true);
