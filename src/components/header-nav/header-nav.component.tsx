@@ -9,10 +9,15 @@ import { useState, useEffect } from "react";
 import { MobileNavClose, MobileNavOpen } from "../mobile-nav/mobile-nav.styled";
 import MobileNav from "../mobile-nav/mobile-nav.component";
 
+import useSound from "use-sound";
+import quack from "../../assets/sounds/quackTrimmed.mp3";
+
 export const HeaderNav = () => {
   const [isScrolling, setIsScrolling] = useState(false);
   const [isMobileView, setIsMobileView] = useState(false);
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+
+  const [playQuack] = useSound(quack);
 
   useEffect(() => {
     const scrollStatus = () => {
@@ -40,11 +45,17 @@ export const HeaderNav = () => {
   }, []);
 
   function openMobileNav() {
+    playQuack();
     setIsMobileNavOpen(true);
   }
 
   function closeMobileNav() {
+    playQuack();
     setIsMobileNavOpen(false);
+  }
+
+  function handleQuack() {
+    playQuack();
   }
 
   return (
@@ -74,6 +85,7 @@ export const HeaderNav = () => {
                 smooth={true}
                 duration={100}
                 to="hero-page"
+                onClick={handleQuack}
               >
                 about
               </Link>
@@ -85,6 +97,7 @@ export const HeaderNav = () => {
                 smooth={true}
                 duration={100}
                 to="tokenomics-page"
+                onClick={handleQuack}
               >
                 tokenomics
               </Link>
@@ -96,6 +109,7 @@ export const HeaderNav = () => {
                 smooth={true}
                 duration={100}
                 to="footer-page"
+                onClick={handleQuack}
               >
                 community
               </Link>
