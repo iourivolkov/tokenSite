@@ -42,7 +42,7 @@ export const Text = styled.p`
   color: #000;
   margin-top: 50px;
   text-align: center;
-  width: 35ch;
+  width: 40ch;
 
   @media ${device.md} {
     font-size: 32px;

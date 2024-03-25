@@ -40,7 +40,7 @@ const LurrynomicsText = {
   contractPrompt: "Contract:",
   contract: "click to copy",
   utilityPrompt: "Utility:",
-  utility: "...tbd",
+  utility: "...wat utility?",
   button: "buy $lurry",
 };
 
