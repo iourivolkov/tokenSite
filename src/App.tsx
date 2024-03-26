@@ -13,6 +13,7 @@ function App() {
       <DisclaimerContainer />
       <HeroContainer />
       <TokenomicsContainer />
+
       <FooterContainer />
     </>
   );

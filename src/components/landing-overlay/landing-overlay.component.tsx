@@ -16,7 +16,7 @@ const LandingOverlay = () => {
 
   const [playQuack] = useSound(quack);
   const [playBg] = useSound(bgMusic, {
-    volume: 0.5,
+    volume: 0.2,
     duration: 5000,
   });
 
