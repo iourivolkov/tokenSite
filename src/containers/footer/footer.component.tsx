@@ -48,7 +48,7 @@ export const FooterContainer = () => {
       </SocialButtonContainer>
       <FooterBottomContainer>
         <FooterBottomText>Powered by Lurry Labs</FooterBottomText>
-        <FooterBottomText>&copy; Copyright Lurry Labs 2024</FooterBottomText>
+        <FooterBottomText>&copy; Copyright Lurry Labs</FooterBottomText>
         <FooterBottomText>lurrylabs@gmail.com</FooterBottomText>
       </FooterBottomContainer>
     </FooterPageContainer>
