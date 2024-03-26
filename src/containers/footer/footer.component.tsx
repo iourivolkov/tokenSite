@@ -10,6 +10,8 @@ import {
   FurryLurryQuote,
   YetiLurryQuote,
   FooterQuotesContainer,
+  FooterBottomContainer,
+  FooterBottomText,
 } from "./footer.styled";
 
 const FooterText = {
@@ -44,6 +46,11 @@ export const FooterContainer = () => {
           <SocialButton>{FooterText.tgButton}</SocialButton>
         </a>
       </SocialButtonContainer>
+      <FooterBottomContainer>
+        <FooterBottomText>Powered by Lurry Labs</FooterBottomText>
+        <FooterBottomText>&copy; Copyright Lurry Labs 2024</FooterBottomText>
+        <FooterBottomText>lurrylabs@gmail.com</FooterBottomText>
+      </FooterBottomContainer>
     </FooterPageContainer>
   );
 };

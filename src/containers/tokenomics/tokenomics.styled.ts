@@ -103,7 +103,7 @@ export const LurryCoin1 = styled.img`
   right: 450px;
   transform: rotate(-46deg);
   /* animation: ${lurryCoin1Animation} 8s ease-in-out infinite; */
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 
   @media ${device.md} {
     font-size: 40px;
@@ -134,7 +134,7 @@ export const LurryCoin2 = styled.img`
   right: 120px;
   transform: rotate(72deg);
   /* animation: ${lurryCoin2Animation} 20s ease-in-out infinite; */
-  border: 3px solid orange;
+  /* border: 3px solid orange; */
 
   @media ${device.md} {
     height: 320px;
@@ -163,7 +163,7 @@ export const LurryCoin3 = styled.img`
   top: 200px;
   right: 500px;
   animation: ${lurryCoin3Animation} 12s ease-in-out infinite;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 
   @media ${device.md} {
     top: 80px;
@@ -187,7 +187,7 @@ export const LurryCoin4 = styled.img`
   left: 200px;
   transform: rotate(-34deg);
   /* animation: ${lurryCoin4Animation} 8s ease-in-out infinite; */
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
   @media ${device.md} {
     filter: blur(5px);
@@ -217,7 +217,7 @@ export const LurryCoin5 = styled.img`
   left: 180px;
   transform: rotate(30deg);
   /* animation: ${lurryCoin5Animation} 8s ease-in-out infinite; */
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
 
   @media ${device.md} {
     left: 140px;
@@ -249,7 +249,7 @@ export const LurryCoin6 = styled.img`
   left: 500px;
   transform: rotate(70deg);
   /* animation: ${lurryCoin6Animation} 12s ease-in-out infinite; */
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
 
   @media ${device.md} {
     top: -20px;
@@ -269,7 +269,7 @@ export const LurryCoin7 = styled.img`
   bottom: -180px;
   left: 300px;
   animation: ${lurryCoin7Animation} 6s ease-in-out infinite;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 
   @media ${device.md} {
     overflow: hidden;
@@ -294,7 +294,7 @@ export const LurryCoin8 = styled.img`
   top: 120px;
   left: 820px;
   animation: ${lurryCoin8Animation} 9s ease-in-out infinite;
-  border: 3px solid red;
+  /* border: 3px solid red; */
 
   @media ${device.md} {
     top: 100px;
@@ -318,7 +318,7 @@ export const LurryCoin9 = styled.img`
   bottom: 10px;
   right: 480px;
   /* animation: ${lurryCoin9Animation} 8s ease-in-out infinite; */
-  border: 3px solid teal;
+  /* border: 3px solid teal; */
 
   @media ${device.md} {
     opacity: 0;
