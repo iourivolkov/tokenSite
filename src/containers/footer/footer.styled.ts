@@ -9,8 +9,37 @@ export const FooterPageContainer = styled.div`
   align-items: center;
   position: relative;
   overflow: hidden;
-  margin-top: 100px;
-  padding-bottom: 100px;
+  margin-top: 200px;
+  padding-bottom: 200px;
+`;
+
+export const FooterBottomContainer = styled.div`
+  position: absolute;
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+
+  @media ${device.xs} {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+export const FooterBottomText = styled.p`
+  font-family: "handjet-regular";
+  font-size: 18px;
+  color: #000;
+  margin: 0 60px 40px 60px;
+
+  @media ${device.xs} {
+    font-size: 14px;
+    margin: -5px 60px 40px 60px;
+  }
 `;
 
 export const FooterQuotesContainer = styled.div`
@@ -27,12 +56,32 @@ export const FurryLurryQuote = styled.p`
   font-family: "handjet-regular";
   font-size: 28px;
   transform: rotate(30deg);
+
+  @media ${device.md} {
+  }
+
+  @media ${device.xs} {
+    font-size: 20px;
+    position: absolute;
+    bottom: 400px;
+    left: 50px;
+  }
 `;
 
 export const YetiLurryQuote = styled.p`
   font-family: "handjet-regular";
   font-size: 40px;
   transform: rotate(-30deg);
+
+  @media ${device.md} {
+  }
+
+  @media ${device.xs} {
+    position: absolute;
+    font-size: 30px;
+    bottom: 400px;
+    right: 30px;
+  }
 `;
 
 export const Heading = styled(SectionTitle)`
