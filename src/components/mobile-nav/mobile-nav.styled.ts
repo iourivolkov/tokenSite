@@ -27,3 +27,24 @@ export const MobileNavMenuItem = styled.button`
     color: #fff;
   }
 `;
+
+export const MobileNavOpen = styled.button`
+  background: none;
+  border: none;
+  font-family: "handjet-regular";
+  font-size: 20px;
+  color: #000;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: -1;
+`;
+
+export const MobileNavClose = styled.button`
+  background: none;
+  border: none;
+  font-family: "handjet-regular";
+  font-size: 20px;
+  color: #000;
+  text-transform: uppercase;
+  cursor: pointer;
+`;
