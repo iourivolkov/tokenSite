@@ -10,6 +10,8 @@ import {
   FurryLurryQuote,
   YetiLurryQuote,
   FooterQuotesContainer,
+  FooterBottomContainer,
+  FooterBottomText,
 } from "./footer.styled";
 
 const FooterText = {
@@ -40,10 +42,15 @@ export const FooterContainer = () => {
         <a target="_blank" href="https://twitter.com/lurrytheduck">
           <SocialButton>{FooterText.xButton}</SocialButton>
         </a>
-        <a target="_blank" href="">
+        <a target="_blank" href="https://t.me/lurrylabs">
           <SocialButton>{FooterText.tgButton}</SocialButton>
         </a>
       </SocialButtonContainer>
+      <FooterBottomContainer>
+        <FooterBottomText>Powered by Lurry Labs</FooterBottomText>
+        <FooterBottomText>&copy; Copyright Lurry Labs</FooterBottomText>
+        <FooterBottomText>lurrylabs@gmail.com</FooterBottomText>
+      </FooterBottomContainer>
     </FooterPageContainer>
   );
 };
