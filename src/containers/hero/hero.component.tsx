@@ -8,8 +8,8 @@ import {
 
 const HeroPageText = {
   heading: "Lurry-lore",
-  subheading: "All about Lurry's not-so-dramatic past",
-  paragraph: `On the planet of Lurdonia, a group of scientists engineered an army of mutated rubber ducks, they primed for Galactic conquest.  
+  subheading: "All about Lurry's dramatic hero-origin arc",
+  paragraph: `On the planet of Lurdonia, a group of scientists engineered an army of mutated rubber ducks, primed for Galactic conquest.  
 
     Yet, the Lurry's wanted no part in global conquest, and were desperate to escape. 
     

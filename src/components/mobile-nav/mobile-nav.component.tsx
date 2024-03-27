@@ -2,12 +2,17 @@ import { MobileNavContainer, MobileNavMenuItem } from "./mobile-nav.styled";
 import { Link } from "react-scroll";
 import { useEffect } from "react";
 
+// @ts-expect-error - does not have types
+import useSound from "use-sound";
+import quack from "../../assets/sounds/quackTrimmed.mp3";
+
 interface MobileNavProps {
   setIsMobileNavOpen: (value: boolean) => void;
   isMobileNavOpen: boolean;
 }
 
 const MobileNav = ({ setIsMobileNavOpen, isMobileNavOpen }: MobileNavProps) => {
+  const [playQuack] = useSound(quack);
   useEffect(() => {
     const handleBodyOverflow = () => {
       if (isMobileNavOpen) {
@@ -25,6 +30,7 @@ const MobileNav = ({ setIsMobileNavOpen, isMobileNavOpen }: MobileNavProps) => {
   }, [isMobileNavOpen]);
 
   function closeMobileNav() {
+    playQuack();
     setIsMobileNavOpen(false);
   }
 
