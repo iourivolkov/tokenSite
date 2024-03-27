@@ -6,9 +6,19 @@ import {
 
 import { useState, useEffect } from "react";
 
+import useSound from "use-sound";
+import quack from "../../assets/sounds/quackTrimmed.mp3";
+import bgMusic from "../../assets/sounds/lurryBgMusic.mp3";
+
 const LandingOverlay = () => {
   const [isOverlayOpen, setIsOverlayOpen] = useState(true);
   const [fadeOut, setFadeOut] = useState(false);
+
+  const [playQuack] = useSound(quack);
+  const [playBg] = useSound(bgMusic, {
+    volume: 0.2,
+    duration: 5000,
+  });
 
   useEffect(() => {
     if (isOverlayOpen) {
@@ -19,7 +29,10 @@ const LandingOverlay = () => {
   }, [isOverlayOpen]);
 
   function handleCloseOverlay() {
+    playQuack();
+    playBg();
     setFadeOut(true);
+
     setTimeout(() => {
       setIsOverlayOpen(false);
     }, 1000);

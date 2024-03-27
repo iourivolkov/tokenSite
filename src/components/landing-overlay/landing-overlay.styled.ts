@@ -13,7 +13,7 @@ export const OverlayContainer = styled.div<{ fadeOut: boolean }>`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 100;
+  z-index: 104;
   transition: opacity 1s ease; /* Adjust timing as needed */
 
   ${(props) =>

@@ -8,12 +8,14 @@ import {
 
 const HeroPageText = {
   heading: "Lurry-lore",
-  subheading: "All about Lurry's not-so-dramatic past",
-  paragraph:
-    "Lurry was a simple duck until one day, he discovered crypto twitter. Since then, Lurry spent all his days thinking about meme coins. Instead of quacking, he started saying things like 'wagmi' and calling other ducks 'poors'. Lurry was never the same since. ",
-};
+  subheading: "All about Lurry's dramatic hero-origin arc",
+  paragraph: `On the planet of Lurdonia, a group of scientists engineered an army of mutated rubber ducks, primed for Galactic conquest.  
 
-// @TODO - adjust position of randomly dispered elements -> ideally, they should be fixed to the lore page component
+    Yet, the Lurry's wanted no part in global conquest, and were desperate to escape. 
+    
+    The Lurry's devised a plan to leave the planet of Lurdonia and travel by spaceship to earth. But there was a problem, the Lurry's had no money to build a ship - until they discovered crypto... 
+    `,
+};
 
 export const HeroContainer = () => {
   return (
