@@ -29,6 +29,7 @@ export const OverlayHeading = styled.button`
   border: none;
   background: none;
   cursor: pointer;
+  color: black;
 
   &:hover {
     color: #fff;
