@@ -10,46 +10,20 @@ export const FooterPageContainer = styled.div`
   position: relative;
   overflow: hidden;
   margin-top: 200px;
-  padding-bottom: 200px;
-`;
-
-export const FooterBottomContainer = styled.div`
-  position: absolute;
-  bottom: 0;
-  height: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-
-  @media ${device.xs} {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-`;
-
-export const FooterBottomText = styled.p`
-  font-family: "handjet-regular";
-  font-size: 18px;
-  color: #000;
-  margin: 0 60px 40px 60px;
-
-  @media ${device.xs} {
-    font-size: 14px;
-    margin: -5px 60px 40px 60px;
-  }
 `;
 
 export const FooterQuotesContainer = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 30%;
+  align-items: flex-end;
+  gap: 50%;
   height: 100px;
   width: 100%;
   max-width: 1024px;
+
+  @media ${device.xs} {
+    gap: 50%;
+  }
 `;
 
 export const FurryLurryQuote = styled.p`
@@ -62,7 +36,6 @@ export const FurryLurryQuote = styled.p`
 
   @media ${device.xs} {
     font-size: 20px;
-    position: absolute;
     bottom: 400px;
     left: 50px;
   }
@@ -77,7 +50,6 @@ export const YetiLurryQuote = styled.p`
   }
 
   @media ${device.xs} {
-    position: absolute;
     font-size: 30px;
     bottom: 400px;
     right: 30px;
@@ -86,6 +58,10 @@ export const YetiLurryQuote = styled.p`
 
 export const Heading = styled(SectionTitle)`
   margin-top: 70px;
+
+  @media ${device.xs} {
+    margin-top: 20px;
+  }
 `;
 
 export const Subheading = styled.p`
@@ -121,6 +97,33 @@ export const SocialButton = styled.button`
   &:hover {
     color: #fff;
     transition: all ease-in 0.2s;
+  }
+`;
+
+export const FooterBottomContainer = styled.div`
+  width: 100%;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  padding: 40px 60px;
+
+  @media ${device.xs} {
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 100px;
+  }
+`;
+
+export const FooterBottomText = styled.p`
+  font-family: "handjet-regular";
+  font-size: 18px;
+  color: #000;
+
+  @media ${device.xs} {
+    font-size: 14px;
   }
 `;
 

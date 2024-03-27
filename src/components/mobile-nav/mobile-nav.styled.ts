@@ -10,12 +10,7 @@ export const MobileNavContainer = styled.div`
   align-items: center;
   color: #000;
   width: 100%;
-  height: 100vh;
-`;
-
-export const MobileHeaderContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
+  height: 100dvh;
 `;
 
 export const MobileNavMenuItem = styled.button`

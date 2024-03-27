@@ -18,6 +18,7 @@ import {
 } from "./tokenomics.styled";
 import { useState } from "react";
 
+// @ts-expect-error - has no types
 import useSound from "use-sound";
 import moneySound from "../../assets/sounds/moneyTrimmed.mp3";
 import clickSound from "../../assets/sounds/clickSound.mp3";
