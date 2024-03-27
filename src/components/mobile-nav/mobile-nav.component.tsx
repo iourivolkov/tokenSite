@@ -2,7 +2,12 @@ import { MobileNavContainer, MobileNavMenuItem } from "./mobile-nav.styled";
 import { Link } from "react-scroll";
 import { useEffect } from "react";
 
-const MobileNav = ({ setIsMobileNavOpen, isMobileNavOpen }: any) => {
+interface MobileNavProps {
+  setIsMobileNavOpen: (value: boolean) => void;
+  isMobileNavOpen: boolean;
+}
+
+const MobileNav = ({ setIsMobileNavOpen, isMobileNavOpen }: MobileNavProps) => {
   useEffect(() => {
     const handleBodyOverflow = () => {
       if (isMobileNavOpen) {
