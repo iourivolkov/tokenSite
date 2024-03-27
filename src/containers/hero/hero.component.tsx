@@ -2,7 +2,6 @@ import {
   Heading,
   Subheading,
   Text,
-  HeroPageContainer,
   LorePageContainer,
   LurryImage,
 } from "./hero.styled";
@@ -20,11 +19,10 @@ export const HeroContainer = () => {
   return (
     <LorePageContainer id="hero-page">
       <LurryImage src="/assets/susLurry.png" />
-      <HeroPageContainer>
-        <Heading>{HeroPageText.heading}</Heading>
-        <Subheading>{HeroPageText.subheading}</Subheading>
-        <Text>{HeroPageText.paragraph}</Text>
-      </HeroPageContainer>
+
+      <Heading>{HeroPageText.heading}</Heading>
+      <Subheading>{HeroPageText.subheading}</Subheading>
+      <Text>{HeroPageText.paragraph}</Text>
     </LorePageContainer>
   );
 };

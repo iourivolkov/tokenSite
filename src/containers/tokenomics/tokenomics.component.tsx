@@ -13,7 +13,12 @@ import {
   LurryCoin6,
   LurryCoin7,
   LurryCoin8,
+  LurryCoin9,
+  ClickToCopy,
 } from "./tokenomics.styled";
+import { useState } from "react";
+
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const LurrynomicsText = {
   heading: "Lurry-nomics",
@@ -21,9 +26,15 @@ const LurrynomicsText = {
   supplyPrompt: "Supply:",
   supply: "1,000,000,000",
   liquidityPrompt: "Liquidity:",
-  liquidity: "burned",
+  liquidity: "90%, burned",
+  teamPrompt: "Team:",
+  team: "6%",
+  marketingPrompt: "Marketing:",
+  marketing: "2%",
+  collaborationsPrompt: "Collaborations:",
+  collaborations: "2%",
   contractPrompt: "Contract:",
-  contract: "renounced",
+  contract: "click to copy",
   utilityPrompt: "Utility:",
   utility: "...tbd",
   button: "buy $lurry",
@@ -32,34 +43,70 @@ const LurrynomicsText = {
 // @TODO - add correct dex link once contract is live
 
 export const TokenomicsContainer = () => {
+  const [copied, setCopied] = useState(false);
+
+  async function handleCopy() {
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1500);
+  }
+
   function handleBuy() {
     console.log("redirect to dextools");
   }
 
   return (
     <TokenomicsPageContainer id="tokenomics-page">
-      <LurryCoin1 src="/assets/lurryCoin.png" />
-      <LurryCoin2 src="/assets/lurryCoin.png" />
-      <LurryCoin3 src="/assets/lurryCoin.png" />
-      <LurryCoin4 src="/assets/lurryCoin.png" />
-      <LurryCoin5 src="/assets/lurryCoin.png" />
-      <LurryCoin6 src="/assets/lurryCoin.png" />
-      <LurryCoin7 src="/assets/lurryCoin.png" />
-      <LurryCoin8 src="/assets/lurryCoin.png" />
+      <LurryCoin1 src="/assets/3dCoin5.png" />
+      <LurryCoin2 src="/assets/3dCoin5.png" />
+      <LurryCoin3 src="/assets/3dCoin3.png" />
+      <LurryCoin4 src="/assets/3dCoin1.png" />
+      <LurryCoin5 src="/assets/3dCoin1.png" />
+      <LurryCoin6 src="/assets/3dCoin5.png" />
+      <LurryCoin7 src="/assets/3dCoin2.png" />
+      <LurryCoin8 src="/assets/3dCoin6.png" />
+      <LurryCoin9 src="/assets/3dCoin9.png" />
+
       {/* <LurryImage src="/assets/lurryCoin.png" /> */}
+
       <Heading>{LurrynomicsText.heading}</Heading>
+
       <Subheading>{LurrynomicsText.subheading}</Subheading>
+
       <TokenomicsTextContainer>
         <Text>{LurrynomicsText.supplyPrompt}</Text>
         <Text>{LurrynomicsText.supply}</Text>
       </TokenomicsTextContainer>
+
       <TokenomicsTextContainer>
         <Text>{LurrynomicsText.liquidityPrompt}</Text>
         <Text>{LurrynomicsText.liquidity}</Text>
       </TokenomicsTextContainer>
+
+      <TokenomicsTextContainer>
+        <Text>{LurrynomicsText.teamPrompt}</Text>
+        <Text>{LurrynomicsText.team}</Text>
+      </TokenomicsTextContainer>
+
+      <TokenomicsTextContainer>
+        <Text>{LurrynomicsText.marketingPrompt}</Text>
+        <Text>{LurrynomicsText.marketing}</Text>
+      </TokenomicsTextContainer>
+
+      <TokenomicsTextContainer>
+        <Text>{LurrynomicsText.collaborationsPrompt}</Text>
+        <Text>{LurrynomicsText.collaborations}</Text>
+      </TokenomicsTextContainer>
+
       <TokenomicsTextContainer>
         <Text>{LurrynomicsText.contractPrompt}</Text>
-        <Text>{LurrynomicsText.contract}</Text>
+        <CopyToClipboard
+          text="https://dexscreener.com/solana/432xjvh7zqh85f669hr7ofegkd5cbzd4m3jn41uztc2d"
+          onCopy={handleCopy}
+        >
+          <ClickToCopy>
+            {copied ? "copied" : LurrynomicsText.contract}
+          </ClickToCopy>
+        </CopyToClipboard>
       </TokenomicsTextContainer>
       <TokenomicsTextContainer>
         <Text>{LurrynomicsText.utilityPrompt}</Text>

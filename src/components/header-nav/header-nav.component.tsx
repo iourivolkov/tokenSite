@@ -4,7 +4,7 @@ import {
   NavItemSpan,
   NavLogoSpan,
 } from "./header-nav.styled";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import { useEffect, useState } from "react";
 
 export const HeaderNav = () => {
@@ -12,16 +12,21 @@ export const HeaderNav = () => {
 
   useEffect(() => {
     const scrollStatus = () => {
-      setIsScrolling(window.scrollY >= 0);
+      setIsScrolling(window.scrollY > 10);
     };
-    scrollStatus();
+
+    window.addEventListener("scroll", scrollStatus);
+
+    return () => {
+      window.removeEventListener("scroll", scrollStatus);
+    };
   }, []);
 
   return (
     <>
-      <Navigation>
+      <Navigation isHidden={!isScrolling}>
         <NavLogoSpan>
-          <Link spy={true} smooth={true} duration={500} to="home-page">
+          <Link spy={true} smooth={true} duration={100} to="home-page">
             Lurry
           </Link>
         </NavLogoSpan>
@@ -31,7 +36,7 @@ export const HeaderNav = () => {
               activeClass="active"
               spy={true}
               smooth={true}
-              duration={500}
+              duration={100}
               to="hero-page"
             >
               about
@@ -42,7 +47,7 @@ export const HeaderNav = () => {
               activeClass="active"
               spy={true}
               smooth={true}
-              duration={500}
+              duration={100}
               to="tokenomics-page"
             >
               tokenomics
@@ -53,7 +58,7 @@ export const HeaderNav = () => {
               activeClass="active"
               spy={true}
               smooth={true}
-              duration={500}
+              duration={100}
               to="footer-page"
             >
               community

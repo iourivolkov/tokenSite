@@ -14,46 +14,46 @@ export const slideAnimation = keyframes`
 
 export const lurryCoin1Animation = keyframes`
   0% {
-    transform: translateY(0) rotate(-20deg) ;
+    transform: translateY(0) rotate(-46deg) ;
   }
   50% {
-    transform: translateY(-20px) rotate(-20deg);
+    transform: translateY(-20px) rotate(-46deg);
   }
   100% {
-    transform: translateY(0) rotate(-20deg);
+    transform: translateY(0) rotate(-46deg);
   }
 `;
 export const lurryCoin2Animation = keyframes`
   0% {
-    transform: translateY(0) rotate(10deg) ;
+    transform: translateY(0) rotate(72deg) ;
   }
   50% {
-    transform: translateY(-20px) rotate(10deg);
+    transform: translateY(-5px) rotate(72deg);
   }
   100% {
-    transform: translateY(0) rotate(10deg);
+    transform: translateY(0) rotate(72deg);
   }
 `;
 export const lurryCoin3Animation = keyframes`
   0% {
-    transform: translateY(0) rotate(130deg) ;
+    transform: translateY(0) rotate(20deg) ;
   }
   50% {
-    transform: translateY(-10px) rotate(130deg);
+    transform: translateY(-8px) rotate(20deg);
   }
   100% {
-    transform: translateY(0) rotate(130deg);
+    transform: translateY(0) rotate(20deg);
   }
 `;
 export const lurryCoin4Animation = keyframes`
   0% {
-    transform: translateY(0) rotate(-45deg) ;
+    transform: translateY(0) rotate(-34deg) ;
   }
   50% {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-4px) rotate(-30deg);
   }
   100% {
-    transform: translateY(0) rotate(-45deg);
+    transform: translateY(0) rotate(-34deg);
   }
 `;
 export const lurryCoin5Animation = keyframes`
@@ -69,34 +69,46 @@ export const lurryCoin5Animation = keyframes`
 `;
 export const lurryCoin6Animation = keyframes`
   0% {
-    transform: translateY(0) rotate(45deg) ;
-  }
-  50% {
-    transform: translateY(-20px) rotate(45deg);
-  }
-  100% {
-    transform: translateY(0) rotate(45deg);
-  }
-`;
-export const lurryCoin7Animation = keyframes`
-  0% {
     transform: translateY(0) rotate(70deg) ;
   }
   50% {
-    transform: translateY(-4px) rotate(67deg);
+    transform: translateY(-10px) rotate(70deg);
   }
   100% {
     transform: translateY(0) rotate(70deg);
   }
 `;
-export const lurryCoin8Animation = keyframes`
+export const lurryCoin7Animation = keyframes`
   0% {
-    transform: translateY(0) rotate(25deg) ;
+    transform: translateY(0) rotate(-50deg) ;
   }
   50% {
-    transform: translateY(-10px) rotate(25deg);
+    transform: translateY(-10px) rotate(-50deg);
   }
   100% {
-    transform: translateY(0) rotate(25deg);
+    transform: translateY(0) rotate(-50deg);
+  }
+`;
+export const lurryCoin8Animation = keyframes`
+  0% {
+    transform: translateY(0) rotate(46.5deg) ;
+  }
+  50% {
+    transform: translateY(-4px) rotate(46.5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(46.5deg);
+  }
+`;
+
+export const lurryCoin9Animation = keyframes`
+  0% {
+    transform: translateY(0) rotate(-28.3deg) ;
+  }
+  50% {
+    transform: translateY(-5px) rotate(-23deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-28.3deg);
   }
 `;
