@@ -10,6 +10,10 @@ export const FooterPageContainer = styled.div`
   position: relative;
   overflow: hidden;
   margin-top: 200px;
+
+  @media ${device.xs} {
+    margin-top: 100px;
+  }
 `;
 
 export const FooterQuotesContainer = styled.div`
@@ -36,7 +40,7 @@ export const FooterQuotesContainer = styled.div`
 
   @media ${device.xs} {
     gap: 50%;
-    top: 100px;
+    top: 150px;
   }
 `;
 
@@ -44,6 +48,7 @@ export const FurryLurryQuote = styled.p`
   font-family: "handjet-regular";
   font-size: 28px;
   transform: rotate(30deg);
+  white-space: nowrap;
 
   @media ${device.md} {
     font-size: 30px;
@@ -51,8 +56,6 @@ export const FurryLurryQuote = styled.p`
 
   @media ${device.xs} {
     font-size: 20px;
-    bottom: 400px;
-    left: 50px;
   }
 `;
 
@@ -68,8 +71,6 @@ export const YetiLurryQuote = styled.p`
 
   @media ${device.xs} {
     font-size: 20px;
-    bottom: 400px;
-    right: 30px;
   }
 `;
 
@@ -82,7 +83,7 @@ export const Heading = styled(SectionTitle)`
   @media ${device.sm} {
   }
   @media ${device.xs} {
-    margin-top: -40px;
+    /* margin-top: -40px; */
   }
 `;
 
@@ -135,7 +136,7 @@ export const FooterBottomContainer = styled.div`
   @media ${device.xs} {
     flex-direction: column;
     gap: 5px;
-    margin-top: 100px;
+    margin-top: 200px;
   }
 `;
 
@@ -172,6 +173,7 @@ export const IceLurryImage = styled.img`
 
   @media ${device.xs} {
     left: -200px;
+    top: 150px;
   }
 `;
 
@@ -193,5 +195,6 @@ export const FurryLurryImage = styled.img`
 
   @media ${device.xs} {
     right: -200px;
+    top: 150px;
   }
 `;
