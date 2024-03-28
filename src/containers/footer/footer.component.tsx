@@ -13,6 +13,10 @@ import {
   FooterBottomText,
 } from "./footer.styled";
 
+import useSound from "use-sound";
+
+import quack from "../../assets/sounds/quackTrimmed.mp3";
+
 const FooterText = {
   heading: "Lurry-frens",
   subheading: "Come join the flock, or whatever a pack of ducks is called",
@@ -24,6 +28,12 @@ const FooterText = {
 // @TODO - add social link for telegram group
 
 export const FooterContainer = () => {
+  const [playQuack] = useSound(quack);
+
+  function handleClick() {
+    playQuack();
+  }
+
   return (
     <FooterPageContainer id="footer-page">
       <FooterQuotesContainer>
@@ -39,10 +49,14 @@ export const FooterContainer = () => {
 
       <SocialButtonContainer>
         <a target="_blank" href="https://twitter.com/lurrytheduck">
-          <SocialButton>{FooterText.xButton}</SocialButton>
+          <SocialButton onClick={handleClick}>
+            {FooterText.xButton}
+          </SocialButton>
         </a>
         <a target="_blank" href="https://t.me/lurrylabs">
-          <SocialButton>{FooterText.tgButton}</SocialButton>
+          <SocialButton onClick={handleClick}>
+            {FooterText.tgButton}
+          </SocialButton>
         </a>
       </SocialButtonContainer>
       <FooterBottomContainer>

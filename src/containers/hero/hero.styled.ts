@@ -73,5 +73,5 @@ export const LurryImage = styled.img`
     top: 10%;
     right: -220px;
   }
-  /* animation: ${slideAnimation} 15s linear infinite; */
+  /* animation: ${slideAnimation} 12s linear; */
 `;

@@ -9,9 +9,9 @@ import {
 const HeroPageText = {
   heading: "Lurry-lore",
   subheading: "All about Lurry's dramatic hero-origin arc",
-  paragraph: `On the planet of Lurdonia, a group of scientists engineered an army of mutated rubber ducks, primed for Galactic conquest.  
+  paragraph: `On the planet of Lurdonia, a group of scientists engineered an army of mutated rubber ducks, primed for galactic conquest.  
 
-    Yet, the Lurry's wanted no part in global conquest, and were desperate to escape. 
+    Yet, the Lurry's wanted no part in global domination, and were desperate to escape. 
     
     The Lurry's devised a plan to leave the planet of Lurdonia and travel by spaceship to earth. But there was a problem, the Lurry's had no money to build a ship - until they discovered crypto... 
     `,

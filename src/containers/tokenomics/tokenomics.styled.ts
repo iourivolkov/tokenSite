@@ -22,22 +22,11 @@ export const TokenomicsPageContainer = styled.div`
   align-items: center;
   position: relative;
 
-  padding-bottom: 100px;
+  padding-block: 200px;
 
   @media ${device.md} {
     overflow: hidden;
   }
-`;
-
-export const Heading = styled(SectionTitle)`
-  /* margin-top: -15px; */
-`;
-
-export const Subheading = styled.p`
-  font-family: "handjet-regular";
-  font-size: 20px;
-  color: #000;
-  /* z-index: 10; */
 `;
 
 export const TokenomicsTextContainer = styled.div`
@@ -53,6 +42,18 @@ export const TokenomicsTextContainer = styled.div`
   @media ${device.sm} {
     max-width: 300px;
   }
+`;
+
+export const Heading = styled(SectionTitle)`
+  /* margin-top: -15px; */
+`;
+
+export const Subheading = styled.p`
+  font-family: "handjet-regular";
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 50px;
+  /* z-index: 10; */
 `;
 
 export const Text = styled.p`

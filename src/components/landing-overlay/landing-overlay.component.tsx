@@ -6,7 +6,6 @@ import {
 
 import { useState, useEffect } from "react";
 
-// @ts-expect-error - pkg doesn't have types
 import useSound from "use-sound";
 import quack from "../../assets/sounds/quackTrimmed.mp3";
 import bgMusic from "../../assets/sounds/lurryBgMusic.mp3";
