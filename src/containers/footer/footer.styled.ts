@@ -124,6 +124,11 @@ export const FooterBottomText = styled.p`
 
   @media ${device.xs} {
     font-size: 14px;
+
+    &:first-child,
+    &:last-child {
+      display: none;
+    }
   }
 `;
 
