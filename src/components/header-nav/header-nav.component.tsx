@@ -9,7 +9,6 @@ import { useState, useEffect } from "react";
 import { MobileNavClose, MobileNavOpen } from "../mobile-nav/mobile-nav.styled";
 import MobileNav from "../mobile-nav/mobile-nav.component";
 
-// @ts-expect-error - has no types
 import useSound from "use-sound";
 import quack from "../../assets/sounds/quackTrimmed.mp3";
 
