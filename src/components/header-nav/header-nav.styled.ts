@@ -11,7 +11,7 @@ export const Navigation = styled.ul<{
   align-items: center;
   position: fixed;
   /* background: ${({ isScrolling, isMobileNavOpen }) =>
-    isScrolling && !isMobileNavOpen ? "rgba(255,255,255,0.4)" : "none"}; */
+    isScrolling && !isMobileNavOpen ? "rgba(255,255,255,0.8)" : "none"}; */
   top: 0px;
   width: 100%;
   z-index: 102;
