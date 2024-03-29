@@ -14,11 +14,12 @@ import {
   DexToolsImage,
 } from "./footer.styled";
 
-import dexTools from "../../../public/assets/dexTools.png";
+import dexTools from "../../assets/dexTools.png";
 
 import useSound from "use-sound";
 
 import quack from "../../assets/sounds/quackTrimmed.mp3";
+import { data } from "../../data";
 
 const FooterText = {
   heading: "Lurry-frens",
@@ -51,24 +52,27 @@ export const FooterContainer = () => {
       <Subheading>{FooterText.subheading}</Subheading>
 
       <SocialButtonContainer>
-        <a target="_blank" href="https://twitter.com/lurrytheduck">
-          <SocialButton onClick={handleClick}>
-            {FooterText.xButton}
-          </SocialButton>
-        </a>
-        <a
+        <SocialButton
           target="_blank"
-          href="https://www.dextools.io/app/en/solana/pair-explorer/b1jUX3eWHceJHpm2gAEF9iDHmxx5kMg2V2kpZ1CvmCf?t=1711687720365"
+          href={data.twitterLink}
+          onClick={handleClick}
         >
-          <SocialButton onClick={handleClick}>
-            <DexToolsImage src={dexTools} />
-          </SocialButton>
-        </a>
-        <a target="_blank" href="https://t.me/lurrylabs">
-          <SocialButton onClick={handleClick}>
-            {FooterText.tgButton}
-          </SocialButton>
-        </a>
+          {FooterText.xButton}
+        </SocialButton>
+        <SocialButton
+          target="_blank"
+          href={data.dexToolsLink}
+          onClick={handleClick}
+        >
+          <DexToolsImage src={dexTools} />
+        </SocialButton>
+        <SocialButton
+          target="_blank"
+          href={data.telegramLink}
+          onClick={handleClick}
+        >
+          {FooterText.tgButton}
+        </SocialButton>
       </SocialButtonContainer>
       <FooterBottomContainer>
         <FooterBottomText>Powered by Lurry Labs</FooterBottomText>

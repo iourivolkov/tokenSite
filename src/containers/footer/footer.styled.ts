@@ -108,10 +108,16 @@ export const SocialButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin-top: 20px;
+  margin-top: 40px;
+
+  @media ${device.xs} {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 30px;
+  }
 `;
 
-export const SocialButton = styled.button`
+export const SocialButton = styled.a`
   border-radius: 60%;
   color: #000;
   background-color: #f7c600;
@@ -145,7 +151,7 @@ export const FooterBottomContainer = styled.div`
   @media ${device.xs} {
     flex-direction: column;
     gap: 5px;
-    margin-top: 200px;
+    margin-top: 100px;
   }
 `;
 
