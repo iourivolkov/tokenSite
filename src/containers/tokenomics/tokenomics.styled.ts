@@ -56,6 +56,13 @@ export const Subheading = styled.p`
   /* z-index: 10; */
 `;
 
+export const ContractSubheading = styled.p`
+  font-family: "handjet-regular";
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 50px;
+`;
+
 export const Text = styled.p`
   font-family: "handjet-regular";
   font-size: 48px;
