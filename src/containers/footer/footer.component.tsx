@@ -58,7 +58,7 @@ export const FooterContainer = () => {
         </a>
         <a
           target="_blank"
-          href="https://www.dextools.io/app/en/solana/pair-explorer/b1jUX3eWHceJHpm2gAEF9iDHmxx5kMg2V2kpZ1CvmCf?t=1711678054378"
+          href="https://www.dextools.io/app/en/solana/pair-explorer/b1jUX3eWHceJHpm2gAEF9iDHmxx5kMg2V2kpZ1CvmCf?t=1711687720365"
         >
           <SocialButton onClick={handleClick}>
             <DexToolsImage src={dexTools} />
