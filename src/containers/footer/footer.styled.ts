@@ -16,6 +16,11 @@ export const FooterPageContainer = styled.div`
   }
 `;
 
+export const DexToolsImage = styled.img`
+  width: 40px;
+  height: 50px;
+`;
+
 export const FooterQuotesContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -110,9 +115,13 @@ export const SocialButton = styled.button`
   border-radius: 60%;
   color: #000;
   background-color: #f7c600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 65px;
   width: 65px;
   border: none;
+  text-decoration: none;
   font-family: "handjet-regular";
   font-size: 36px;
   cursor: pointer;

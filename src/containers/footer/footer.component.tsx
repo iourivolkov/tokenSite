@@ -11,7 +11,10 @@ import {
   FooterQuotesContainer,
   FooterBottomContainer,
   FooterBottomText,
+  DexToolsImage,
 } from "./footer.styled";
+
+import dexTools from "../../../public/assets/dexTools.png";
 
 import useSound from "use-sound";
 
@@ -51,6 +54,14 @@ export const FooterContainer = () => {
         <a target="_blank" href="https://twitter.com/lurrytheduck">
           <SocialButton onClick={handleClick}>
             {FooterText.xButton}
+          </SocialButton>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.dextools.io/app/en/solana/pair-explorer/b1jUX3eWHceJHpm2gAEF9iDHmxx5kMg2V2kpZ1CvmCf?t=1711687720365"
+        >
+          <SocialButton onClick={handleClick}>
+            <DexToolsImage src={dexTools} />
           </SocialButton>
         </a>
         <a target="_blank" href="https://t.me/lurrylabs">
