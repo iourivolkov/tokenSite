@@ -2,15 +2,18 @@ import styled, { css } from "styled-components";
 import { device } from "../../constants/breakpoints";
 
 export const Navigation = styled.ul<{
-  isHidden: boolean;
-  isScrolling: boolean;
-  isMobileNavOpen: boolean;
+  $isHidden: boolean;
+  $isScrolling: boolean;
+  $isMobileNavOpen: boolean;
 }>`
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  /* background: ${({ isScrolling, isMobileNavOpen }) =>
+  /* background: ${({
+    $isScrolling: isScrolling,
+    $isMobileNavOpen: isMobileNavOpen,
+  }) =>
     isScrolling && !isMobileNavOpen ? "rgba(255,255,255,0.8)" : "none"}; */
   top: 0px;
   width: 100%;
@@ -18,8 +21,8 @@ export const Navigation = styled.ul<{
   transition: transform 0.6s ease-in-out;
   padding: 40px 60px;
 
-  ${({ isHidden }) =>
-    isHidden &&
+  ${({ $isHidden }) =>
+    $isHidden &&
     css`
       transform: translateY(-100%);
     `}

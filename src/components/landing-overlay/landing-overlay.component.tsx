@@ -41,7 +41,7 @@ const LandingOverlay = () => {
   return (
     <>
       {isOverlayOpen && (
-        <OverlayContainer fadeOut={fadeOut}>
+        <OverlayContainer $fadeOut={fadeOut}>
           <OverlayHeading onClick={handleCloseOverlay}>Quack!</OverlayHeading>
           <OverlaySubheading>
             It means "click" in duckspeak...duh

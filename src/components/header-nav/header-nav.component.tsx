@@ -61,9 +61,9 @@ export const HeaderNav = () => {
   return (
     <>
       <Navigation
-        isHidden={!isScrolling}
-        isScrolling={isScrolling}
-        isMobileNavOpen={isMobileNavOpen}
+        $isHidden={!isScrolling}
+        $isScrolling={isScrolling}
+        $isMobileNavOpen={isMobileNavOpen}
       >
         <NavLogoSpan>
           <Link

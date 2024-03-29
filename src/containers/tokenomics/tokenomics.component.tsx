@@ -25,6 +25,7 @@ import clickSound from "../../assets/sounds/clickSound.mp3";
 
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { data } from "../../data";
+import { useAnalytics } from "../../hooks/use-analytics";
 
 const LurrynomicsText = {
   heading: "Lurry-nomics",
@@ -53,6 +54,8 @@ const TOKEN_CONTRACT = data.tokenContract;
 const BUY_LINK = data.buyLink;
 
 export const TokenomicsContainer = () => {
+  const { logEvent } = useAnalytics();
+
   const [copied, setCopied] = useState(false);
 
   const [playClick] = useSound(clickSound);
@@ -61,11 +64,13 @@ export const TokenomicsContainer = () => {
   async function handleCopy() {
     playClick();
     setCopied(true);
+    logEvent("copy_contract");
     setTimeout(() => setCopied(false), 1500);
   }
 
   function handleBuy() {
     playMoney();
+    logEvent("click_buy_button");
     console.log("redirect to dextools");
   }
 
@@ -85,7 +90,11 @@ export const TokenomicsContainer = () => {
 
       <Subheading>{LurrynomicsText.subheading}</Subheading>
 
-      <ContractSubheading>
+      <ContractSubheading
+        onMouseUp={() => {
+          logEvent("select_contract_subheading");
+        }}
+      >
         {LurrynomicsText.subheadingContract}
       </ContractSubheading>
 
