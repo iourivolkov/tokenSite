@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { device } from "../../constants/breakpoints";
 
-export const OverlayContainer = styled.div<{ fadeOut: boolean }>`
+export const OverlayContainer = styled.div<{ $fadeOut: boolean }>`
   background: #ffcd00;
   height: 100dvh;
   width: 100%;
@@ -17,7 +17,7 @@ export const OverlayContainer = styled.div<{ fadeOut: boolean }>`
   transition: opacity 1s ease; /* Adjust timing as needed */
 
   ${(props) =>
-    props.fadeOut &&
+    props.$fadeOut &&
     css`
       opacity: 0;
     `}

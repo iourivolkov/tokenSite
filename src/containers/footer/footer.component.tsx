@@ -20,6 +20,7 @@ import useSound from "use-sound";
 
 import quack from "../../assets/sounds/quackTrimmed.mp3";
 import { data } from "../../data";
+import { useAnalytics } from "../../hooks/use-analytics";
 
 const FooterText = {
   heading: "Lurry-frens",
@@ -33,9 +34,13 @@ const FooterText = {
 
 export const FooterContainer = () => {
   const [playQuack] = useSound(quack);
+  const { logEvent } = useAnalytics();
 
-  function handleClick() {
+  function handleClick(buttonName: string) {
     playQuack();
+    logEvent(`click_${buttonName}`, {
+      buttonName,
+    });
   }
 
   return (
@@ -55,21 +60,21 @@ export const FooterContainer = () => {
         <SocialButton
           target="_blank"
           href={data.twitterLink}
-          onClick={handleClick}
+          onClick={() => handleClick("twitter")}
         >
           {FooterText.xButton}
         </SocialButton>
         <SocialButton
           target="_blank"
           href={data.dexToolsLink}
-          onClick={handleClick}
+          onClick={() => handleClick("dextools")}
         >
           <DexToolsImage src={dexTools} />
         </SocialButton>
         <SocialButton
           target="_blank"
           href={data.telegramLink}
-          onClick={handleClick}
+          onClick={() => handleClick("telegram")}
         >
           {FooterText.tgButton}
         </SocialButton>
