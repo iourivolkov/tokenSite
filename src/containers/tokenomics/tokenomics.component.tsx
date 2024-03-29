@@ -15,6 +15,7 @@ import {
   LurryCoin8,
   LurryCoin9,
   ClickToCopy,
+  ContractSubheading,
 } from "./tokenomics.styled";
 import { useState } from "react";
 
@@ -28,6 +29,7 @@ import { data } from "../../data";
 const LurrynomicsText = {
   heading: "Lurry-nomics",
   subheading: "Lurry likes to keep things simple",
+  subheadingContract: "CA: 6DEbzgDNQYkgk7sFZ1cTBjeUK9gpsLjgURY9EtHkpyCJ",
   supplyPrompt: "Supply:",
   supply: "1,000,000,000",
   liquidityPrompt: "Liquidity:",
@@ -82,6 +84,10 @@ export const TokenomicsContainer = () => {
       <Heading>{LurrynomicsText.heading}</Heading>
 
       <Subheading>{LurrynomicsText.subheading}</Subheading>
+
+      <ContractSubheading>
+        {LurrynomicsText.subheadingContract}
+      </ContractSubheading>
 
       <TokenomicsTextContainer>
         <Text>{LurrynomicsText.supplyPrompt}</Text>
