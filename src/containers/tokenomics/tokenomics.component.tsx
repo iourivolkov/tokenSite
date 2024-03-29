@@ -23,6 +23,7 @@ import moneySound from "../../assets/sounds/moneyTrimmed.mp3";
 import clickSound from "../../assets/sounds/clickSound.mp3";
 
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import { data } from "../../data";
 
 const LurrynomicsText = {
   heading: "Lurry-nomics",
@@ -44,8 +45,10 @@ const LurrynomicsText = {
   button: "buy $lurry",
 };
 
-// @TODO - add correct dex link once contract is live!!
 // @TODO - add contract to "click to copy button" once live!!
+const TOKEN_CONTRACT = data.tokenContract;
+// @TODO - add correct dex link once contract is live!!
+const BUY_LINK = data.buyLink;
 
 export const TokenomicsContainer = () => {
   const [copied, setCopied] = useState(false);
@@ -107,10 +110,7 @@ export const TokenomicsContainer = () => {
 
       <TokenomicsTextContainer>
         <Text>{LurrynomicsText.contractPrompt}</Text>
-        <CopyToClipboard
-          text="https://dexscreener.com/solana/432xjvh7zqh85f669hr7ofegkd5cbzd4m3jn41uztc2d"
-          onCopy={handleCopy}
-        >
+        <CopyToClipboard text={TOKEN_CONTRACT} onCopy={handleCopy}>
           <ClickToCopy>
             {copied ? "copied" : LurrynomicsText.contract}
           </ClickToCopy>
@@ -120,10 +120,7 @@ export const TokenomicsContainer = () => {
         <Text>{LurrynomicsText.utilityPrompt}</Text>
         <Text>{LurrynomicsText.utility}</Text>
       </TokenomicsTextContainer>
-      <a
-        target="_blank"
-        href="https://dexscreener.com/solana/432xjvh7zqh85f669hr7ofegkd5cbzd4m3jn41uztc2d"
-      >
+      <a target="_blank" href={BUY_LINK}>
         <BuyButton onClick={handleBuy}>{LurrynomicsText.button}</BuyButton>
       </a>
     </TokenomicsPageContainer>
