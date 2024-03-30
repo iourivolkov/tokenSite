@@ -12,9 +12,9 @@ import desktop from "./desktop.module.css";
 import { US, CN } from "country-flag-icons/react/3x2";
 
 const languages = {
-  en: {
+  "en-US": {
     title: "EN",
-    value: "en",
+    value: "en-US",
     flagComponent: <US title="English" className={desktop.flag} />,
   },
   zh: {
