@@ -1,0 +1,108 @@
+/* reset */
+/* button {
+  all: unset;
+} */
+
+.SelectTrigger {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 4px; */
+  padding: 0 5px;
+  font-size: 13px;
+  line-height: 1;
+
+  /* height: 35px; */
+  /* gap: 5px; */
+  background-color: transparent;
+  color: black;
+  /* position: relative; */
+
+  /* box-shadow: 0 2px 10px black; */
+}
+.SelectTrigger:hover {
+  /* background-color: purple; */
+  color: #f7c600;
+}
+.SelectTrigger:focus {
+  /* box-shadow: 0 0 0 250x black; */
+}
+.SelectTrigger[data-placeholder] {
+  /* color: purple; */
+}
+
+.SelectIcon {
+  /* color: purple; */
+}
+
+.SelectContent {
+  overflow: hidden;
+  background-color: transparent;
+  border-radius: 6px;
+  /* box-shadow: 0px 10px 38px -10px rgba(22, 23, 24, 0.35),
+    0px 10px 20px -15px rgba(22, 23, 24, 0.2); */
+
+  position: relative;
+  /* top: 100px; */
+  z-index: 10000000000;
+}
+
+.SelectViewport {
+  padding: 5px;
+}
+
+.flag {
+  width: 15px;
+  height: 15px;
+  /* border-radius: 50%; */
+}
+
+.SelectItem {
+  font-family: "handjet-regular";
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 1;
+  color: black;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  height: 25px;
+  padding: 0 10px 0 25px;
+  position: relative;
+  user-select: none;
+}
+.SelectItem[data-highlighted] {
+  outline: none;
+  background-color: #f7c600;
+}
+.SelectItem[data-highlighted] .SelectItemIndicator {
+  outline: none;
+  color: black;
+}
+
+.SelectItemText {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.SelectItemIndicator {
+  position: absolute;
+  left: 0;
+  width: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #f7c600;
+}
+
+.SelectScrollButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  background-color: white;
+  color: #f7c600;
+  cursor: default;
+}
