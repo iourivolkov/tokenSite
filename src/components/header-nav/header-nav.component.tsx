@@ -12,8 +12,10 @@ import MobileNav from "../mobile-nav/mobile-nav.component";
 import useSound from "use-sound";
 import quack from "../../assets/sounds/quackTrimmed.mp3";
 import { LanguageSelector } from "../language-seletor/language-seletor.component";
+import { useTranslation } from "react-i18next";
 
 export const HeaderNav = () => {
+  const { t } = useTranslation();
   const [isScrolling, setIsScrolling] = useState(false);
   const [isMobileView, setIsMobileView] = useState(false);
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -88,7 +90,7 @@ export const HeaderNav = () => {
                 to="hero-page"
                 onClick={handleQuack}
               >
-                about
+                {t("nav.about")}
               </Link>
             </NavItemSpan>
             <NavItemSpan>
@@ -100,7 +102,7 @@ export const HeaderNav = () => {
                 to="tokenomics-page"
                 onClick={handleQuack}
               >
-                tokenomics
+                {t("nav.tokenomics")}
               </Link>
             </NavItemSpan>
             <NavItemSpan>
@@ -112,7 +114,7 @@ export const HeaderNav = () => {
                 to="footer-page"
                 onClick={handleQuack}
               >
-                community
+                {t("nav.community")}
               </Link>
             </NavItemSpan>
             <NavItemSpan>
@@ -127,7 +129,7 @@ export const HeaderNav = () => {
               isMobileNavOpen ? closeMobileNav() : openMobileNav()
             }
           >
-            {isMobileNavOpen ? "Close" : "Menu"}
+            {isMobileNavOpen ? t("nav.close") : t("nav.menu")}
           </MobileNavOpen>
         )}
       </Navigation>

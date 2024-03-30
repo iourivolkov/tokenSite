@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import useSound from "use-sound";
 import quack from "../../assets/sounds/quackTrimmed.mp3";
 import { LanguageSelector } from "../language-seletor/language-seletor-mobile.component";
+import { useTranslation } from "react-i18next";
 
 interface MobileNavProps {
   setIsMobileNavOpen: (value: boolean) => void;
@@ -13,6 +14,8 @@ interface MobileNavProps {
 
 const MobileNav = ({ setIsMobileNavOpen, isMobileNavOpen }: MobileNavProps) => {
   const [playQuack] = useSound(quack);
+  const { t } = useTranslation();
+
   useEffect(() => {
     const handleBodyOverflow = () => {
       if (isMobileNavOpen) {
@@ -45,7 +48,7 @@ const MobileNav = ({ setIsMobileNavOpen, isMobileNavOpen }: MobileNavProps) => {
           to="hero-page"
           onClick={closeMobileNav}
         >
-          about
+          {t("nav.about")}
         </Link>
       </MobileNavMenuItem>
       <MobileNavMenuItem>
@@ -57,7 +60,7 @@ const MobileNav = ({ setIsMobileNavOpen, isMobileNavOpen }: MobileNavProps) => {
           to="tokenomics-page"
           onClick={closeMobileNav}
         >
-          tokenomics
+          {t("nav.tokenomics")}
         </Link>
       </MobileNavMenuItem>
       <MobileNavMenuItem>
@@ -69,7 +72,7 @@ const MobileNav = ({ setIsMobileNavOpen, isMobileNavOpen }: MobileNavProps) => {
           to="footer-page"
           onClick={closeMobileNav}
         >
-          community
+          {t("nav.community")}
         </Link>
       </MobileNavMenuItem>
       <MobileNavMenuItem>

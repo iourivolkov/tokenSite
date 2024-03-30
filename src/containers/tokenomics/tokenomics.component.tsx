@@ -95,7 +95,10 @@ export const TokenomicsContainer = () => {
 
       <TokenomicsTextContainer>
         <Text>{t("tokenomics.liquidityLabel")}</Text>
-        <Text>{LurrynomicsText.liquidity}{t("tokenomics.liquidityText")}</Text>
+        <Text>
+          {LurrynomicsText.liquidity}
+          {t("tokenomics.liquidityText")}
+        </Text>
       </TokenomicsTextContainer>
 
       <TokenomicsTextContainer>
@@ -117,7 +120,7 @@ export const TokenomicsContainer = () => {
         <Text>{t("tokenomics.contractLabel")}</Text>
         <CopyToClipboard text={TOKEN_CONTRACT} onCopy={handleCopy}>
           <ClickToCopy>
-            {copied ? "copied" : t("tokenomics.contractButton")}
+            {copied ? t("tokenomics.copied") : t("tokenomics.contractButton")}
           </ClickToCopy>
         </CopyToClipboard>
       </TokenomicsTextContainer>

@@ -1,4 +1,11 @@
 {
+  "nav": {
+    "about": "about",
+    "tokenomics": "tokenomics",
+    "community": "community",
+    "menu": "Menu",
+    "close": "Close"
+  },
   "landingOverlay": {
     "subheading": "It means \"click\" in duckspeak...duh"
   },
@@ -23,6 +30,7 @@
     "collaborationLabel": "Collaborations:",
     "contractLabel": "Contract:",
     "contractButton": "click to copy",
+    "copied": "copied",
     "utilityLabel": "Utility:",
     "utilityText": "...wat utility?",
     "buyButton": "buy $lurry"
@@ -32,6 +40,8 @@
     "subheading": "Come join the flock, or whatever a pack of ducks is called",
     "footerText": "Powered by LurryLabs",
     "copyright": "© Copyright Lurry Labs",
-    "email": "lurrylabs@gmail.com"
+    "email": "lurrylabs@gmail.com",
+    "wagmi": "wagmi？",
+    "nocap": "no cap fr fr"
   }
 }

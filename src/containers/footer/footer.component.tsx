@@ -38,8 +38,8 @@ export const FooterContainer = () => {
   return (
     <FooterPageContainer id="footer-page">
       <FooterQuotesContainer>
-        <FurryLurryQuote>wagmi?</FurryLurryQuote>
-        <YetiLurryQuote>no cap fr fr</YetiLurryQuote>
+        <FurryLurryQuote>{t("footer.wagmi")}</FurryLurryQuote>
+        <YetiLurryQuote>{t("footer.nocap")}</YetiLurryQuote>
       </FooterQuotesContainer>
 
       <IceLurryImage src="/assets/yetiLurry.png" />
