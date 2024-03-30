@@ -34,7 +34,7 @@ export function LanguageSelector() {
   return (
     <>
       <Select.Root defaultValue={i18n.language} onValueChange={changeLanguage}>
-        <Select.Trigger className={desktop.SelectTrigger} aria-label="Food">
+        <Select.Trigger className={desktop.SelectTrigger}>
           <Select.Value />
         </Select.Trigger>
 
