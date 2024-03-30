@@ -4,6 +4,7 @@ import { useEffect } from "react";
 
 import useSound from "use-sound";
 import quack from "../../assets/sounds/quackTrimmed.mp3";
+import { LanguageSelector } from "../language-seletor/language-seletor-mobile.component";
 
 interface MobileNavProps {
   setIsMobileNavOpen: (value: boolean) => void;
@@ -70,6 +71,9 @@ const MobileNav = ({ setIsMobileNavOpen, isMobileNavOpen }: MobileNavProps) => {
         >
           community
         </Link>
+      </MobileNavMenuItem>
+      <MobileNavMenuItem>
+        <LanguageSelector />
       </MobileNavMenuItem>
     </MobileNavContainer>
   );

@@ -7,7 +7,7 @@ import {
   ChevronUpIcon,
 } from "@radix-ui/react-icons";
 import { forwardRef } from "react";
-import desktop from "./desktop.module.css";
+import desktop from "./desktop-mobile.module.css";
 
 import { US, CN } from "country-flag-icons/react/3x2";
 
