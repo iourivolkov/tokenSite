@@ -1,4 +1,32 @@
 {
+  "landingOverlay": {
+    "subheading": "It means \"click\" in duckspeak...duh"
+  },
+  "disclaimer": {
+    "heading": "Disclaimer",
+    "subheading": "Lurry didn't read this, but you should",
+    "bodyText": "$Lurry was created by lab-engineered rubber ducks who have no knowledge of economics or monetary systems. As such, $Lurry has no value and is a meme coin meant for entertainment purposes only. Do not risk money you are afraid of losing. Just like a duck bobbing in the water, the price may go up or it may go down. We take no responsibility for the price action."
+  },
+  "hero": {
+    "heading": "Lurry-lore",
+    "subheading": "All about Lurry's dramatic hero-origin arc",
+    "bodyText": "On the planet of Lurdonia, a group of scientists engineered an army of mutated rubber ducks, primed for galactic conquest. Yet, the Lurry's wanted no part in global domination, and were desperate to escape. The Lurry's devised a plan to leave the planet of Lurdonia and travel by spaceship to earth. But there was a problem, the Lurry's had no money to build a ship - until they discovered crypto..."
+  },
+  "tokenomics": {
+    "heading": "Lurry-nomics",
+    "subheading": "Lurry likes to keep things simple",
+    "supplyLabel": "Supply:",
+    "liquidityLabel": "Liquidity:",
+    "liquidityText": ", burned",
+    "teamLabel": "Team:",
+    "marketingLabel": "Marketing:",
+    "collaborationLabel": "Collaborations:",
+    "contractLabel": "Contract:",
+    "contractButton": "click to copy",
+    "utilityLabel": "Utility:",
+    "utilityText": "...wat utility?",
+    "buyButton": "buy $lurry"
+  },
   "footer": {
     "heading": "Lurry-frens",
     "subheading": "Come join the flock, or whatever a pack of ducks is called",
