@@ -6,11 +6,12 @@ import {
 } from "./header-nav.styled";
 import { Link } from "react-scroll";
 import { useState, useEffect } from "react";
-import { MobileNavClose, MobileNavOpen } from "../mobile-nav/mobile-nav.styled";
+import { MobileNavOpen } from "../mobile-nav/mobile-nav.styled";
 import MobileNav from "../mobile-nav/mobile-nav.component";
 
 import useSound from "use-sound";
 import quack from "../../assets/sounds/quackTrimmed.mp3";
+import { LanguageSelector } from "../language-seletor/language-seletor.component";
 
 export const HeaderNav = () => {
   const [isScrolling, setIsScrolling] = useState(false);
@@ -76,7 +77,7 @@ export const HeaderNav = () => {
             Lurry
           </Link>
         </NavLogoSpan>
-        {!isMobileView ? (
+        {!isMobileView && (
           <NavItemContainer>
             <NavItemSpan>
               <Link
@@ -114,13 +115,23 @@ export const HeaderNav = () => {
                 community
               </Link>
             </NavItemSpan>
+            <NavItemSpan>
+              <LanguageSelector />
+            </NavItemSpan>
           </NavItemContainer>
-        ) : !isMobileNavOpen ? (
-          <MobileNavOpen onClick={openMobileNav}>Menu</MobileNavOpen>
-        ) : (
-          <MobileNavClose onClick={closeMobileNav}>Close</MobileNavClose>
+        )}
+
+        {isMobileView && (
+          <MobileNavOpen
+            onClick={() =>
+              isMobileNavOpen ? closeMobileNav() : openMobileNav()
+            }
+          >
+            {isMobileNavOpen ? "Close" : "Menu"}
+          </MobileNavOpen>
         )}
       </Navigation>
+
       {isMobileNavOpen && (
         <MobileNav
           setIsMobileNavOpen={setIsMobileNavOpen}
