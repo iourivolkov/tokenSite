@@ -4,17 +4,19 @@ import { HeroContainer } from "./containers/hero/hero.component";
 import { LandingComponent } from "./containers/landing/landing.component";
 import { TokenomicsContainer } from "./containers/tokenomics/tokenomics.component";
 import { DisclaimerContainer } from "./containers/disclaimer/disclaimer.component";
-import { useEffect } from "react";
-import { useAnalytics } from "./hooks/use-analytics";
+
+// import i18n (needs to be bundled ;))
+import "./i18n";
+import { Suspense } from "react";
+import { Loader } from "./components/loader/loader.component";
 
 function App() {
-  const { logEvent } = useAnalytics();
-  useEffect(() => {
-    logEvent("page_view", { page_path: "/" });
-  }, [logEvent]);
+  // useEffect(() => {
+  //   logEvent("page_view", { page_path: "/" });
+  // }, [logEvent]);
 
   return (
-    <>
+    <Suspense fallback={<Loader />}>
       <HeaderNav />
       <LandingComponent />
       <DisclaimerContainer />
@@ -22,7 +24,7 @@ function App() {
       <TokenomicsContainer />
 
       <FooterContainer />
-    </>
+    </Suspense>
   );
 }
 

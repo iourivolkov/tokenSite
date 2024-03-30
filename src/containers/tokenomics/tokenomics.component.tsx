@@ -26,26 +26,15 @@ import clickSound from "../../assets/sounds/clickSound.mp3";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { data } from "../../data";
 import { useAnalytics } from "../../hooks/use-analytics";
+import { useTranslation } from "react-i18next";
 
 const LurrynomicsText = {
-  heading: "Lurry-nomics",
-  subheading: "Lurry likes to keep things simple",
   subheadingContract: "CA: 6DEbzgDNQYkgk7sFZ1cTBjeUK9gpsLjgURY9EtHkpyCJ",
-  supplyPrompt: "Supply:",
   supply: "1,000,000,000",
-  liquidityPrompt: "Liquidity:",
-  liquidity: "90%, burned",
-  teamPrompt: "Team:",
+  liquidity: "90%",
   team: "6%",
-  marketingPrompt: "Marketing:",
   marketing: "2%",
-  collaborationsPrompt: "Collaborations:",
   collaborations: "2%",
-  contractPrompt: "Contract:",
-  contract: "click to copy",
-  utilityPrompt: "Utility:",
-  utility: "...wat utility?",
-  button: "buy $lurry",
 };
 
 // @TODO - add contract to "click to copy button" once live!!
@@ -55,6 +44,7 @@ const BUY_LINK = data.buyLink;
 
 export const TokenomicsContainer = () => {
   const { logEvent } = useAnalytics();
+  const { t } = useTranslation();
 
   const [copied, setCopied] = useState(false);
 
@@ -86,9 +76,9 @@ export const TokenomicsContainer = () => {
       <LurryCoin8 src="/assets/3dCoin6.png" />
       <LurryCoin9 src="/assets/3dCoin9.png" />
 
-      <Heading>{LurrynomicsText.heading}</Heading>
+      <Heading>{t("tokenomics.heading")}</Heading>
 
-      <Subheading>{LurrynomicsText.subheading}</Subheading>
+      <Subheading>{t("tokenomics.subheading")}</Subheading>
 
       <ContractSubheading
         onMouseUp={() => {
@@ -99,44 +89,47 @@ export const TokenomicsContainer = () => {
       </ContractSubheading>
 
       <TokenomicsTextContainer>
-        <Text>{LurrynomicsText.supplyPrompt}</Text>
+        <Text>{t("tokenomics.supplyLabel")}</Text>
         <Text>{LurrynomicsText.supply}</Text>
       </TokenomicsTextContainer>
 
       <TokenomicsTextContainer>
-        <Text>{LurrynomicsText.liquidityPrompt}</Text>
-        <Text>{LurrynomicsText.liquidity}</Text>
+        <Text>{t("tokenomics.liquidityLabel")}</Text>
+        <Text>
+          {LurrynomicsText.liquidity}
+          {t("tokenomics.liquidityText")}
+        </Text>
       </TokenomicsTextContainer>
 
       <TokenomicsTextContainer>
-        <Text>{LurrynomicsText.teamPrompt}</Text>
+        <Text>{t("tokenomics.teamLabel")}</Text>
         <Text>{LurrynomicsText.team}</Text>
       </TokenomicsTextContainer>
 
       <TokenomicsTextContainer>
-        <Text>{LurrynomicsText.marketingPrompt}</Text>
+        <Text>{t("tokenomics.marketingLabel")}</Text>
         <Text>{LurrynomicsText.marketing}</Text>
       </TokenomicsTextContainer>
 
       <TokenomicsTextContainer>
-        <Text>{LurrynomicsText.collaborationsPrompt}</Text>
+        <Text>{t("tokenomics.collaborationLabel")}</Text>
         <Text>{LurrynomicsText.collaborations}</Text>
       </TokenomicsTextContainer>
 
       <TokenomicsTextContainer>
-        <Text>{LurrynomicsText.contractPrompt}</Text>
+        <Text>{t("tokenomics.contractLabel")}</Text>
         <CopyToClipboard text={TOKEN_CONTRACT} onCopy={handleCopy}>
           <ClickToCopy>
-            {copied ? "copied" : LurrynomicsText.contract}
+            {copied ? t("tokenomics.copied") : t("tokenomics.contractButton")}
           </ClickToCopy>
         </CopyToClipboard>
       </TokenomicsTextContainer>
       <TokenomicsTextContainer>
-        <Text>{LurrynomicsText.utilityPrompt}</Text>
-        <Text>{LurrynomicsText.utility}</Text>
+        <Text>{t("tokenomics.utilityLabel")}</Text>
+        <Text>{t("tokenomics.utilityText")}</Text>
       </TokenomicsTextContainer>
       <a target="_blank" href={BUY_LINK}>
-        <BuyButton onClick={handleBuy}>{LurrynomicsText.button}</BuyButton>
+        <BuyButton onClick={handleBuy}>{t("tokenomics.buyButton")}</BuyButton>
       </a>
     </TokenomicsPageContainer>
   );

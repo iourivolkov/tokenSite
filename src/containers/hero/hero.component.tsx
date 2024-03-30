@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   Heading,
   Subheading,
@@ -6,25 +7,16 @@ import {
   LurryImage,
 } from "./hero.styled";
 
-const HeroPageText = {
-  heading: "Lurry-lore",
-  subheading: "All about Lurry's dramatic hero-origin arc",
-  paragraph: `On the planet of Lurdonia, a group of scientists engineered an army of mutated rubber ducks, primed for galactic conquest.  
-
-    Yet, the Lurry's wanted no part in global domination, and were desperate to escape. 
-    
-    The Lurry's devised a plan to leave the planet of Lurdonia and travel by spaceship to earth. But there was a problem, the Lurry's had no money to build a ship - until they discovered crypto... 
-    `,
-};
-
 export const HeroContainer = () => {
+  const { t } = useTranslation();
+
   return (
     <LorePageContainer id="hero-page">
       <LurryImage src="/assets/susLurry.png" />
 
-      <Heading>{HeroPageText.heading}</Heading>
-      <Subheading>{HeroPageText.subheading}</Subheading>
-      <Text>{HeroPageText.paragraph}</Text>
+      <Heading>{t("hero.heading")}</Heading>
+      <Subheading>{t("hero.subheading")}</Subheading>
+      <Text>{t("hero.bodyText")}</Text>
     </LorePageContainer>
   );
 };

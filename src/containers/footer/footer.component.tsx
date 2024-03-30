@@ -21,20 +21,12 @@ import useSound from "use-sound";
 import quack from "../../assets/sounds/quackTrimmed.mp3";
 import { data } from "../../data";
 import { useAnalytics } from "../../hooks/use-analytics";
-
-const FooterText = {
-  heading: "Lurry-frens",
-  subheading: "Come join the flock, or whatever a pack of ducks is called",
-  xButton: "X",
-  tgButton: "Tg",
-  FooterText: "Powered by LurryLabs",
-};
-
-// @TODO - add social link for telegram group
+import { useTranslation } from "react-i18next";
 
 export const FooterContainer = () => {
   const [playQuack] = useSound(quack);
   const { logEvent } = useAnalytics();
+  const { t } = useTranslation();
 
   function handleClick(buttonName: string) {
     playQuack();
@@ -46,15 +38,15 @@ export const FooterContainer = () => {
   return (
     <FooterPageContainer id="footer-page">
       <FooterQuotesContainer>
-        <FurryLurryQuote>wagmi?</FurryLurryQuote>
-        <YetiLurryQuote>no cap fr fr</YetiLurryQuote>
+        <FurryLurryQuote>{t("footer.wagmi")}</FurryLurryQuote>
+        <YetiLurryQuote>{t("footer.nocap")}</YetiLurryQuote>
       </FooterQuotesContainer>
 
       <IceLurryImage src="/assets/yetiLurry.png" />
       <FurryLurryImage src="/assets/furryLurry.png" />
 
-      <Heading>{FooterText.heading}</Heading>
-      <Subheading>{FooterText.subheading}</Subheading>
+      <Heading>{t("footer.heading")}</Heading>
+      <Subheading>{t("footer.subheading")}</Subheading>
 
       <SocialButtonContainer>
         <SocialButton
@@ -62,7 +54,7 @@ export const FooterContainer = () => {
           href={data.twitterLink}
           onClick={() => handleClick("twitter")}
         >
-          {FooterText.xButton}
+          X
         </SocialButton>
         <SocialButton
           target="_blank"
@@ -76,13 +68,13 @@ export const FooterContainer = () => {
           href={data.telegramLink}
           onClick={() => handleClick("telegram")}
         >
-          {FooterText.tgButton}
+          Tg
         </SocialButton>
       </SocialButtonContainer>
       <FooterBottomContainer>
-        <FooterBottomText>Powered by Lurry Labs</FooterBottomText>
-        <FooterBottomText>&copy; Copyright Lurry Labs</FooterBottomText>
-        <FooterBottomText>lurrylabs@gmail.com</FooterBottomText>
+        <FooterBottomText>{t("footer.footerText")}</FooterBottomText>
+        <FooterBottomText>{t("footer.copyright")}</FooterBottomText>
+        <FooterBottomText>{t("footer.email")}</FooterBottomText>
       </FooterBottomContainer>
     </FooterPageContainer>
   );

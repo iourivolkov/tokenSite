@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "about": "关于",
+    "tokenomics": "代币经济",
+    "community": "社区",
+    "menu": "菜单",
+    "close": "关闭"
+  },
+  "landingOverlay": {
+    "subheading": "It means \"click\" in duckspeak...duh"
+  },
+  "disclaimer": {
+    "heading": "免责声明",
+    "subheading": "Lurry 没有读这个，但你应该读",
+    "bodyText": "Lurry是由实验室制造的橡胶鸭创造的，它们对经济学或货币系统一无所知。因此，Lurry没有价值，是一种只用于娱乐目的的模因币。不要冒着失去的风险。就像一只在水中漂浮的鸭子，价格可能会上涨，也可能会下跌。我们不对价格行为负责。"
+  },
+  "hero": {
+    "heading": "Lurry传说",
+    "subheading": "Lurry戏剧性英雄起源弧线的一切",
+    "bodyText": "在鲁尔多尼亚星球上，一群科学家设计了一支经过基因突变的橡胶鸭军队，准备进行银河征服。然而，Lurry们并不想参与全球统治，而是迫切地想要逃离。Lurry们制定了一个计划，离开鲁尔多尼亚星球，乘坐飞船前往地球。但是有一个问题，Lurry们没有钱建造飞船 - 直到他们发现了加密货币..."
+  },
+  "tokenomics": {
+    "heading": "Lurry-经济学",
+    "subheading": "Lurry喜欢保持简单",
+    "supplyLabel": "供应:",
+    "liquidityLabel": "流动性:",
+    "liquidityText": ", 烧毁",
+    "teamLabel": "团队:",
+    "marketingLabel": "市场营销:",
+    "collaborationLabel": "合作:",
+    "contractLabel": "合约:",
+    "contractButton": "点击复制",
+    "copied": "已复制",
+    "utilityLabel": "实用性:",
+    "utilityText": "...什么功能？",
+    "buyButton": "购买 $lurry"
+  },
+  "footer": {
+    "heading": "Lurry好友",
+    "subheading": "来加入群，或者无论一群鸭子被称为什么",
+    "footerText": "由Lurry实验室提供动力",
+    "copyright": "© 版权所有 Lurry 实验室",
+    "email": "lurrylabs@gmail.com",
+    "wagmi": "我们都会成功吗？",
+    "nocap": "无顶 fr"
+  }
+}
