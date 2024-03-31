@@ -12,9 +12,9 @@ import desktop from "./desktop.module.css";
 import { US, CN } from "country-flag-icons/react/3x2";
 
 const languages = {
-  "en-US": {
+  en: {
     title: "EN",
-    value: "en-US",
+    value: "en",
     flagComponent: <US title="English" className={desktop.flag} />,
   },
   zh: {
@@ -28,13 +28,15 @@ type Languages = keyof typeof languages;
 
 export function LanguageSelector() {
   const { i18n } = useTranslation();
+
+  console.log(i18n.languages);
   function changeLanguage(lang: Languages) {
     i18n.changeLanguage(lang);
   }
   return (
     <>
       <Select.Root defaultValue={i18n.language} onValueChange={changeLanguage}>
-        <Select.Trigger className={desktop.SelectTrigger} aria-label="Food">
+        <Select.Trigger className={desktop.SelectTrigger}>
           <Select.Value />
         </Select.Trigger>
 
