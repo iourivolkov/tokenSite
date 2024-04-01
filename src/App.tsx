@@ -9,24 +9,18 @@ import { DisclaimerContainer } from "./containers/disclaimer/disclaimer.componen
 import "./i18n";
 import { Suspense } from "react";
 import { Loader } from "./components/loader/loader.component";
-import { Overlay } from "./components/overlay/overlay.component";
 
 function App() {
-  // useEffect(() => {
-  //   logEvent("page_view", { page_path: "/" });
-  // }, [logEvent]);
-
   return (
-    <Overlay />
-    // <Suspense fallback={<Loader />}>
-    //   <HeaderNav />
-    //   <LandingComponent />
-    //   <DisclaimerContainer />
-    //   <HeroContainer />
-    //   <TokenomicsContainer />
+    <Suspense fallback={<Loader />}>
+      <HeaderNav />
+      <LandingComponent />
+      <DisclaimerContainer />
+      <HeroContainer />
+      <TokenomicsContainer />
 
-    //   <FooterContainer />
-    // </Suspense>
+      <FooterContainer />
+    </Suspense>
   );
 }
 
