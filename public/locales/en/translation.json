@@ -7,7 +7,8 @@
     "close": "Close"
   },
   "landingOverlay": {
-    "subheading": "It means \"click\" in duckspeak...duh"
+    "heading": "click to view the quackmap",
+    "subheading": "once you're done looking at the quackmap, click anywhere to enter the pond"
   },
   "disclaimer": {
     "heading": "Disclaimer",

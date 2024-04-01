@@ -8,7 +8,7 @@ import {
   LurrySun,
 } from "./landing.styled";
 
-import LandingOverlay from "../../components/landing-overlay/landing-overlay.component";
+import { Overlay } from "../../components/overlay/overlay.component";
 
 export const LandingComponent = () => {
   const leftCloudRef = useRef<HTMLImageElement>(null);
@@ -25,7 +25,9 @@ export const LandingComponent = () => {
       if (leftCloud && rightCloud && sun) {
         leftCloud.style.transform = `translateX(-${scrollY * 0.8}px)`;
         rightCloud.style.transform = `translateX(${scrollY * 0.4}px)`;
-        sun.style.transform = `translate(-50%, calc(-50% + -${scrollY * 0.5}px)`;
+        sun.style.transform = `translate(-50%, calc(-50% + -${
+          scrollY * 0.5
+        }px)`;
       }
     };
 
@@ -38,7 +40,7 @@ export const LandingComponent = () => {
 
   return (
     <>
-      <LandingOverlay />
+      <Overlay />
       <LandingPageDiv id="home-page">
         <CloudsAndSunDiv>
           <LeftCloud

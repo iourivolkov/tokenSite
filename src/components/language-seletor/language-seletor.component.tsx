@@ -26,17 +26,29 @@ const languages = {
 
 type Languages = keyof typeof languages;
 
-export function LanguageSelector() {
+interface LanguageSelectorProps {
+  color?: string;
+  withBackground?: boolean;
+}
+
+export function LanguageSelector({
+  color = "black",
+  withBackground,
+}: LanguageSelectorProps) {
   const { i18n } = useTranslation();
 
-  console.log(i18n.languages);
   function changeLanguage(lang: Languages) {
     i18n.changeLanguage(lang);
   }
   return (
     <>
       <Select.Root defaultValue={i18n.language} onValueChange={changeLanguage}>
-        <Select.Trigger className={desktop.SelectTrigger}>
+        <Select.Trigger
+          className={desktop.SelectTrigger}
+          style={{
+            color,
+          }}
+        >
           <Select.Value />
         </Select.Trigger>
 
@@ -46,7 +58,11 @@ export function LanguageSelector() {
               <ChevronUpIcon />
             </Select.ScrollUpButton>
 
-            <Select.Viewport className={desktop.SelectViewport}>
+            <Select.Viewport
+              className={`${desktop.SelectViewport} ${
+                withBackground ? desktop.background : ""
+              }`}
+            >
               {Object.entries(languages).map(
                 ([key, { title, flagComponent }]) => (
                   <SelectItem key={key} value={key}>

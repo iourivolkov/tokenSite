@@ -11,10 +11,6 @@ import { Suspense } from "react";
 import { Loader } from "./components/loader/loader.component";
 
 function App() {
-  // useEffect(() => {
-  //   logEvent("page_view", { page_path: "/" });
-  // }, [logEvent]);
-
   return (
     <Suspense fallback={<Loader />}>
       <HeaderNav />

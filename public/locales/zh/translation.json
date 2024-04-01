@@ -7,7 +7,8 @@
     "close": "关闭"
   },
   "landingOverlay": {
-    "subheading": "It means \"click\" in duckspeak...duh"
+    "heading": "点击查看“鸭子地图”。",
+    "subheading": "一旦你看完了那个“鸭子地图”，点击任何地方进入池塘。"
   },
   "disclaimer": {
     "heading": "免责声明",
