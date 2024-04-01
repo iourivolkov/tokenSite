@@ -9,6 +9,7 @@ import { DisclaimerContainer } from "./containers/disclaimer/disclaimer.componen
 import "./i18n";
 import { Suspense } from "react";
 import { Loader } from "./components/loader/loader.component";
+import { Overlay } from "./components/overlay/overlay.component";
 
 function App() {
   // useEffect(() => {
@@ -16,15 +17,16 @@ function App() {
   // }, [logEvent]);
 
   return (
-    <Suspense fallback={<Loader />}>
-      <HeaderNav />
-      <LandingComponent />
-      <DisclaimerContainer />
-      <HeroContainer />
-      <TokenomicsContainer />
+    <Overlay />
+    // <Suspense fallback={<Loader />}>
+    //   <HeaderNav />
+    //   <LandingComponent />
+    //   <DisclaimerContainer />
+    //   <HeroContainer />
+    //   <TokenomicsContainer />
 
-      <FooterContainer />
-    </Suspense>
+    //   <FooterContainer />
+    // </Suspense>
   );
 }
 
