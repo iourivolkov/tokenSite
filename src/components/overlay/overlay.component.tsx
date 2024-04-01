@@ -8,11 +8,11 @@ import { LanguageSelector } from "../language-seletor/language-seletor.component
 
 const INITIAL_OPACITY = 0.1;
 
-function isMobileBrowser() {
-  const mobileRegex =
-    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
-  return mobileRegex.test(navigator.userAgent);
-}
+// function isMobileBrowser() {
+//   const mobileRegex =
+//     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+//   return mobileRegex.test(navigator.userAgent);
+// }
 
 export function Overlay() {
   const [opacity, setOpacity] = useState(INITIAL_OPACITY);
@@ -82,17 +82,18 @@ export function Overlay() {
         </LangSelectorWrapper>
         <OverlayTextWrapper opacity={opacity} onClick={handleClick}>
           <OverlayHeading>
-            {isMobileBrowser()
+            {t("landingOverlay.heading")}
+            {/* {isMobileBrowser()
               ? t("landingOverlay.headingActionTouch")
               : t("landingOverlay.headingActionClick")}{" "}
-            {t("landingOverlay.heading")}
+            {t("landingOverlay.heading")} */}
           </OverlayHeading>
           <OverlayText>
-            {t("landingOverlay.subheading")}{" "}
-            {isMobileBrowser()
+            {t("landingOverlay.subheading")}
+            {/* {isMobileBrowser()
               ? t("landingOverlay.subheadingActionTouch")
               : t("landingOverlay.subheadingActionClick")}{" "}
-            {t("landingOverlay.subheading2")}
+            {t("landingOverlay.subheading2")} */}
           </OverlayText>
         </OverlayTextWrapper>
       </OverlayWrapper>

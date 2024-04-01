@@ -7,13 +7,8 @@
     "close": "Close"
   },
   "landingOverlay": {
-    "headingActionClick": "click",
-    "headingActionTouch": "touch",
-    "heading": "to view the quackmap",
-    "subheading": "once you're done looking at the quackmap,",
-    "subheading2": "anywhere to enter the pond",
-    "subheadingActionClick": "click",
-    "subheadingActionTouch": "touch"
+    "heading": "click to view the quackmap",
+    "subheading": "once you're done looking at the quackmap, click anywhere to enter the pond"
   },
   "disclaimer": {
     "heading": "Disclaimer",

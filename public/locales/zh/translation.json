@@ -7,13 +7,8 @@
     "close": "关闭"
   },
   "landingOverlay": {
-    "headingActionClick": "click",
-    "headingActionTouch": "touch",
-    "heading": "to view the quackmap",
-    "subheading": "once you're done looking at the quackmap,",
-    "subheading2": "anywhere to enter the pond",
-    "subheadingActionClick": "click",
-    "subheadingActionTouch": "touch"
+    "heading": "点击查看“鸭子地图”。",
+    "subheading": "一旦你看完了那个“鸭子地图”，点击任何地方进入池塘。"
   },
   "disclaimer": {
     "heading": "免责声明",
