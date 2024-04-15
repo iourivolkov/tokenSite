@@ -13,7 +13,7 @@ import {
   OverlayHeading,
 } from "./overlay.styled";
 
-import lurryVideo from "../../../public/assets/lurryNYAd.mp4";
+import lurryVideo from "../../assets/lurryNYAd.mp4";
 
 const INITIAL_OPACITY = 0.1;
 
@@ -29,6 +29,7 @@ export function Overlay() {
   const [fadeOut, setFadeOut] = useState(false);
   const [isOverlayOpen, setIsOverlayOpen] = useState(true);
   const { t } = useTranslation();
+  const videoRef = useRef<HTMLVideoElement | null>(null);
 
   const [playQuack] = useSound(quack);
   const [playBg] = useSound(bgMusic, {
@@ -39,9 +40,11 @@ export function Overlay() {
   const animationStarted = opacity > INITIAL_OPACITY;
   const animationEnded = opacity >= 1;
 
-  const handleClick = () => {
+  const handleClick = async () => {
     if (!animationStarted) {
       playBg();
+      await videoRef.current?.play();
+      console.log("video played");
     }
 
     playQuack();
@@ -88,8 +91,14 @@ export function Overlay() {
   return (
     <>
       <OverlayWrapper $fadeOut={fadeOut}>
-        <OverlayVideo opacity={opacity} autoPlay>
-          <source src={lurryVideo} type="audio/mpeg" />
+        <OverlayVideo
+          opacity={opacity}
+          autoPlay
+          ref={videoRef}
+          onEnded={handleClick}
+        >
+          {/* set view to have full heigh */}
+          <source src={lurryVideo} type="video/mp4" />
         </OverlayVideo>
         <LangSelectorWrapper>
           <LanguageSelector color="white" withBackground />

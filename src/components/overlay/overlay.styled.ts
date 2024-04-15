@@ -22,6 +22,9 @@ export const OverlayWrapper = styled.div<{ $fadeOut: boolean }>`
   top: 0;
   z-index: 100;
   transition: opacity 1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   ${(props) =>
     props.$fadeOut &&
@@ -32,9 +35,8 @@ export const OverlayWrapper = styled.div<{ $fadeOut: boolean }>`
 
 export const OverlayVideo = styled.video<{ opacity: number }>`
   opacity: ${({ opacity }) => opacity};
-  height: 1000px;
-  width: 2000px;
-  position: relative;
+  height: 100vh;
+  max-width: unset;
 `;
 
 export const OverlayTextWrapper = styled.div<{ opacity: number }>`
