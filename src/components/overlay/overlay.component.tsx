@@ -79,10 +79,16 @@ export function Overlay() {
 
   if (!isOverlayOpen) return null;
 
+  // const video = document.querySelector("video");
+
+  // video?.addEventListener("ended", (event: any) => {
+  //   setFadeOut(true);
+  // });
+
   return (
     <>
       <OverlayWrapper $fadeOut={fadeOut}>
-        <OverlayVideo opacity={opacity} loop muted autoPlay>
+        <OverlayVideo opacity={opacity} autoPlay>
           <source src={lurryVideo} type="audio/mpeg" />
         </OverlayVideo>
         <LangSelectorWrapper>
