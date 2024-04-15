@@ -1,10 +1,19 @@
 import { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import styled, { css } from "styled-components";
 import useSound from "use-sound";
 import quack from "../../assets/sounds/quackTrimmed.mp3";
 import bgMusic from "../../assets/sounds/lurryBgMusic.mp3";
 import { LanguageSelector } from "../language-seletor/language-seletor.component";
+import {
+  LangSelectorWrapper,
+  OverlayWrapper,
+  OverlayVideo,
+  OverlayTextWrapper,
+  OverlayText,
+  OverlayHeading,
+} from "./overlay.styled";
+
+import lurryVideo from "../../../public/assets/lurryNYAd.mp4";
 
 const INITIAL_OPACITY = 0.1;
 
@@ -73,10 +82,9 @@ export function Overlay() {
   return (
     <>
       <OverlayWrapper $fadeOut={fadeOut}>
-        <OverlayImage opacity={opacity}>
-          <EarthImg src="assets/Earth.png" alt="earth" />
-          <LurdoniaImg src="assets/Lurdonia.png" alt="lurdonia" />
-        </OverlayImage>
+        <OverlayVideo opacity={opacity} loop muted autoPlay>
+          <source src={lurryVideo} type="audio/mpeg" />
+        </OverlayVideo>
         <LangSelectorWrapper>
           <LanguageSelector color="white" withBackground />
         </LangSelectorWrapper>
@@ -100,104 +108,3 @@ export function Overlay() {
     </>
   );
 }
-
-const LangSelectorWrapper = styled.div`
-  position: fixed;
-  width: 100%;
-  height: 100px;
-  top: 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding-right: 20px;
-  padding-top: 20px;
-  z-index: 10000;
-  background-color: transparent;
-`;
-
-const OverlayWrapper = styled.div<{ $fadeOut: boolean }>`
-  background-color: black;
-  height: 100dvh;
-  width: 100dvw;
-  position: fixed;
-  top: 0;
-  z-index: 100;
-  transition: opacity 1s ease;
-
-  ${(props) =>
-    props.$fadeOut &&
-    css`
-      opacity: 0;
-    `}
-`;
-
-const OverlayImage = styled.div<{ opacity: number }>`
-  background-image: url("assets/Sky.png");
-  opacity: ${({ opacity }) => opacity};
-  height: 100%;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-`;
-
-const LurdoniaImg = styled.img`
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 750px;
-
-  @media (min-width: 596px) {
-    max-width: 1500px;
-    width: 100vw;
-  }
-`;
-
-const EarthImg = styled.img`
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  min-width: 450px;
-
-  @media (min-width: 596px) {
-    max-width: 1200px;
-    width: 100vw;
-  }
-`;
-
-const OverlayTextWrapper = styled.div<{ opacity: number }>`
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  opacity: ${({ opacity }) => 1 - opacity};
-  color: white;
-  padding-inline: 50px;
-  gap: 50px;
-`;
-
-const OverlayText = styled.span`
-  font-family: "handjet-regular";
-  max-width: 500px;
-  font-size: 24px;
-
-  @media (min-width: 596px) {
-    font-size: 32px;
-    max-width: 1000px;
-  }
-`;
-
-const OverlayHeading = styled(OverlayText)`
-  font-size: 30px;
-  font-family: "handjet-bold";
-
-  @media (min-width: 596px) {
-    font-size: 40px;
-  }
-`;
