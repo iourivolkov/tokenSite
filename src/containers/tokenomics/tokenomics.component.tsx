@@ -31,10 +31,6 @@ import { useTranslation } from "react-i18next";
 const LurrynomicsText = {
   subheadingContract: "CA: 6DEbzgDNQYkgk7sFZ1cTBjeUK9gpsLjgURY9EtHkpyCJ",
   supply: "1,000,000,000",
-  liquidity: "90%",
-  team: "6%",
-  marketing: "2%",
-  collaborations: "2%",
 };
 
 // @TODO - add contract to "click to copy button" once live!!
@@ -91,29 +87,6 @@ export const TokenomicsContainer = () => {
       <TokenomicsTextContainer>
         <Text>{t("tokenomics.supplyLabel")}</Text>
         <Text>{LurrynomicsText.supply}</Text>
-      </TokenomicsTextContainer>
-
-      <TokenomicsTextContainer>
-        <Text>{t("tokenomics.liquidityLabel")}</Text>
-        <Text>
-          {LurrynomicsText.liquidity}
-          {t("tokenomics.liquidityText")}
-        </Text>
-      </TokenomicsTextContainer>
-
-      <TokenomicsTextContainer>
-        <Text>{t("tokenomics.teamLabel")}</Text>
-        <Text>{LurrynomicsText.team}</Text>
-      </TokenomicsTextContainer>
-
-      <TokenomicsTextContainer>
-        <Text>{t("tokenomics.marketingLabel")}</Text>
-        <Text>{LurrynomicsText.marketing}</Text>
-      </TokenomicsTextContainer>
-
-      <TokenomicsTextContainer>
-        <Text>{t("tokenomics.collaborationLabel")}</Text>
-        <Text>{LurrynomicsText.collaborations}</Text>
       </TokenomicsTextContainer>
 
       <TokenomicsTextContainer>

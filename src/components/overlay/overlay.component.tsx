@@ -73,10 +73,10 @@ export function Overlay() {
   return (
     <>
       <OverlayWrapper $fadeOut={fadeOut}>
-        <OverlayImage opacity={opacity}>
+        {/* <OverlayImage opacity={opacity}>
           <EarthImg src="assets/Earth.png" alt="earth" />
           <LurdoniaImg src="assets/Lurdonia.png" alt="lurdonia" />
-        </OverlayImage>
+        </OverlayImage> */}
         <LangSelectorWrapper>
           <LanguageSelector color="white" withBackground />
         </LangSelectorWrapper>

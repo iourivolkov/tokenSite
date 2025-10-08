@@ -40,7 +40,6 @@ export const LandingComponent = () => {
 
   return (
     <>
-      <Overlay />
       <LandingPageDiv id="home-page">
         <CloudsAndSunDiv>
           <LeftCloud

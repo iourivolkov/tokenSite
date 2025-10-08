@@ -11,10 +11,9 @@ import {
   FooterQuotesContainer,
   FooterBottomContainer,
   FooterBottomText,
-  DexToolsImage,
 } from "./footer.styled";
 
-import dexTools from "../../assets/dexTools.png";
+// import dexTools from "../../assets/dexTools.png";
 
 import useSound from "use-sound";
 
@@ -55,20 +54,6 @@ export const FooterContainer = () => {
           onClick={() => handleClick("twitter")}
         >
           X
-        </SocialButton>
-        <SocialButton
-          target="_blank"
-          href={data.dexToolsLink}
-          onClick={() => handleClick("dextools")}
-        >
-          <DexToolsImage src={dexTools} />
-        </SocialButton>
-        <SocialButton
-          target="_blank"
-          href={data.telegramLink}
-          onClick={() => handleClick("telegram")}
-        >
-          Tg
         </SocialButton>
       </SocialButtonContainer>
       <FooterBottomContainer>
