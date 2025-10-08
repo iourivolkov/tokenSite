@@ -57,9 +57,9 @@ export const FooterContainer = () => {
         </SocialButton>
       </SocialButtonContainer>
       <FooterBottomContainer>
-        <FooterBottomText>{t("footer.footerText")}</FooterBottomText>
+        {/* <FooterBottomText>{t("footer.footerText")}</FooterBottomText> */}
         <FooterBottomText>{t("footer.copyright")}</FooterBottomText>
-        <FooterBottomText>{t("footer.email")}</FooterBottomText>
+        {/* <FooterBottomText>{t("footer.email")}</FooterBottomText> */}
       </FooterBottomContainer>
     </FooterPageContainer>
   );

@@ -29,7 +29,7 @@ import { useAnalytics } from "../../hooks/use-analytics";
 import { useTranslation } from "react-i18next";
 
 const LurrynomicsText = {
-  subheadingContract: "CA: 6DEbzgDNQYkgk7sFZ1cTBjeUK9gpsLjgURY9EtHkpyCJ",
+  subheadingContract: "CA: placeholder",
   supply: "1,000,000,000",
 };
 

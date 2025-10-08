@@ -142,7 +142,7 @@ export const FooterBottomContainer = styled.div`
   width: 100%;
   margin-top: 200px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
   align-items: center;
   white-space: nowrap;
